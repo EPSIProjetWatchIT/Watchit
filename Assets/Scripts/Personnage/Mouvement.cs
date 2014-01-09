@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Mouvement : MonoBehaviour {
 	
-	private const float VITESSE = 3f;
+	private const float VITESSE = 5f;
 	private const float VITESSEROTATION = 50f;
 	private const float VOIEG = -0.4f;
 	private const float VOIED = 0.4f;

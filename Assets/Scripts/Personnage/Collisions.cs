@@ -30,6 +30,7 @@ public class Collisions : MonoBehaviour {
 						SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
 						if (!virage.traverse) {
 								transform.Rotate (Vector3.up * 45f);
+				transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
 								virage.traverse = true;
 						}
 		}
@@ -39,7 +40,8 @@ public class Collisions : MonoBehaviour {
 				SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
 				if (!virage.traverse)
 				{
-					transform.Rotate (Vector3.up * -45.42f);
+					transform.Rotate (Vector3.up * -45f);
+					transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
 					virage.traverse = true;
 				}
 			}
