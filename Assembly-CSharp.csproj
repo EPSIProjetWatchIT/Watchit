@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1C09369F-29C4-14D4-C980-635AB981BEDF}</ProjectGuid>
+	<ProjectGuid>{9CC13FBD-7A38-9BF9-EA21-A0F2D154C6B0}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,30 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneAlarmLight.cs" />
-     <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneCCTVPlayerDetection.cs" />
-     <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneLaserBlinking.cs" />
-     <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneLaserPlayerDetection.cs" />
-     <Compile Include="Assets\Done\DoneScripts\AlarmSystems\DoneLaserSwitchDeactivation.cs" />
-     <Compile Include="Assets\Done\DoneScripts\EnemyScripts\DoneEnemyAI.cs" />
-     <Compile Include="Assets\Done\DoneScripts\EnemyScripts\DoneEnemyAnimation.cs" />
-     <Compile Include="Assets\Done\DoneScripts\EnemyScripts\DoneEnemyShooting.cs" />
-     <Compile Include="Assets\Done\DoneScripts\EnemyScripts\DoneEnemySight.cs" />
-     <Compile Include="Assets\Done\DoneScripts\EnemyScripts\DoneWayPointGizmo.cs" />
-     <Compile Include="Assets\Done\DoneScripts\GameControllerScripts\DoneHashIDs.cs" />
-     <Compile Include="Assets\Done\DoneScripts\GameControllerScripts\DoneLastPlayerSighting.cs" />
-     <Compile Include="Assets\Done\DoneScripts\LevelDynamics\DoneCameraMovement.cs" />
-     <Compile Include="Assets\Done\DoneScripts\LevelDynamics\DoneDoorAnimation.cs" />
-     <Compile Include="Assets\Done\DoneScripts\LevelDynamics\DoneKeyPickup.cs" />
-     <Compile Include="Assets\Done\DoneScripts\LevelDynamics\DoneLiftDoorsTracking.cs" />
-     <Compile Include="Assets\Done\DoneScripts\LevelDynamics\DoneLiftTrigger.cs" />
-     <Compile Include="Assets\Done\DoneScripts\PlayerScripts\DonePlayerHealth.cs" />
-     <Compile Include="Assets\Done\DoneScripts\PlayerScripts\DonePlayerInventory.cs" />
-     <Compile Include="Assets\Done\DoneScripts\PlayerScripts\DonePlayerMovement.cs" />
-     <Compile Include="Assets\Done\DoneScripts\ScreenFaderScripts\DoneSceneFadeInOut.cs" />
-     <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
-     <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
-     <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
@@ -80,34 +56,16 @@
      <Compile Include="Assets\Scripts\Personnage\Mouvement.cs" />
      <Compile Include="Assets\Scripts\Personnage\Perso.cs" />
      <Compile Include="Assets\Scripts\Personnage\Sautillement.cs" />
-     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
-     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-     <None Include="Assets\Shaders\ReflectiveDiffuseSpecTransp.shader" />
-     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
-     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
-     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
-     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
-     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{14D43482-53DA-302E-1522-25407B3284EE}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{63F4A93D-7E02-B09C-C230-182B19E10BA8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{BD7761DF-6156-D0BA-831A-5F2020021573}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
