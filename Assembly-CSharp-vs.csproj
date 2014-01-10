@@ -70,8 +70,10 @@
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
+     <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
+     <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />
      <Compile Include="Assets\Scripts\Personnage\Clavier.cs" />
      <Compile Include="Assets\Scripts\Personnage\Collisions.cs" />
