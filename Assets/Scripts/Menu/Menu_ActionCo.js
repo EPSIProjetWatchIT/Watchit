@@ -1,11 +1,5 @@
 ﻿#pragma strict
 
-function Start () {
-}
-
-function Update () {
-}
-
 var couleurEntrer : Color = Color.green;
 var couleurSortie : Color = Color.white;
 var tailleEntrer : float = 45;

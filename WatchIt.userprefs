@@ -1,12 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\Menu_Curseur.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\Menu_Specifique.js">
     <Files>
-      <File FileName="Assets\Scripts\Menu\Menu_Curseur.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\Menu_Curseur.js" Line="3" Column="1" />
-      <File FileName="Assets\Scripts\Menu\Menu_Specifique.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\Sautillement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Specifique.js" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Menu\Menu_Specifique.js" Line="15" Column="39" />
       <File FileName="Assets\Scripts\Menu\Menu_ActionCo.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Curseur.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Sautillement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
