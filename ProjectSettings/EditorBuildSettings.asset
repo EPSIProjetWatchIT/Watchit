@@ -7,3 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Done/DoneScenes/DoneStealth.unity
+  - enabled: 1
+    path: Assets/MenuAvecMinion.unity
+  - enabled: 1
+    path: Assets/Scenes/Scene_Grotte.unity
