@@ -2,11 +2,10 @@
 using System.Collections;
 
 public class Sautillement : MonoBehaviour {
-
-	private const float HAUTEURMAX = 0.002f;
-	//private const float VITESSESAUTILLEMENT = 0.004f;
-	private const float VITESSESAUTILLEMENT = 3f;
-	private Vector3 Saut =new Vector3 (0f, 1f, 0f);
+	
+	private const float HAUTEURINIT = 0;
+	private const float GRAVITE = 3f;
+	private float VITESSESAUT = 5f;
 
 
 	// Use this for initialization
@@ -15,10 +14,11 @@ public class Sautillement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Sautillement
-		if((transform.localPosition.y > HAUTEURMAX) || (transform.localPosition.y < 0 ))
-			Saut = Saut * -1f;
-
-		transform.Translate(Saut * VITESSESAUTILLEMENT * Time.deltaTime);
+		transform.Translate (Vector3.up * VITESSESAUT * Time.deltaTime);
+		VITESSESAUT = VITESSESAUT - GRAVITE;
+		if (transform.localPosition.y < HAUTEURINIT)
+		{
+			transform.localPosition = new Vector3 (transform.localPosition.x, HAUTEURINIT, transform.localPosition.z);
+		}
 	}
 }
