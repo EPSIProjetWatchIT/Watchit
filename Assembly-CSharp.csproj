@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scenes\Scene_introduction\Script\PassSceneScript.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
