@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scenes\Scene_introduction\Script\AudioScript.js" />
+     <Compile Include="Assets\Scripts\Menu\Menu_ActionCo.js" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Curseur.js" />
+     <Compile Include="Assets\Scripts\Menu\Menu_Specifique.js" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
