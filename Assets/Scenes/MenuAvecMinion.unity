@@ -190,8 +190,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123554713}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0623272061, y: .889178276, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .0623269081, y: .889178276, z: -0}
+  m_LocalScale: {x: 1.03145409, y: 1, z: 1.03145409}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &144286275
@@ -992,7 +992,7 @@ GUIText:
   m_GameObject: {fileID: 1697288067}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: ;  QUITTER  +
+  m_Text: ;  QUITTER  $
   m_Anchor: 0
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -1014,8 +1014,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1697288067}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .175985545, y: .384685516, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .175985098, y: .201745033, z: -0}
+  m_LocalScale: {x: 1.03145409, y: 1, z: 1.03145409}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1697288070
@@ -1033,6 +1033,7 @@ MonoBehaviour:
   couleurSortie: {r: 1, g: 0, b: 0, a: 1}
   tailleEntrer: 32
   tailleSortie: 30
+  son: {fileID: 8300000, guid: a9a18e8c5da9c71468368e0147bffd87, type: 3}
 --- !u!114 &1697288071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,7 +1045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7725c9bd334914ea4778a4d87ca413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  son: {fileID: 0}
   levelSuivant: Quitter
 --- !u!82 &1697288072
 AudioSource:
@@ -1153,8 +1153,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1734708724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .118581384, y: .615314484, z: 0}
-  m_LocalScale: {x: .88740319, y: 1, z: 1}
+  m_LocalPosition: {x: .118581057, y: .615314364, z: -0}
+  m_LocalScale: {x: .915315568, y: 1, z: 1.03145409}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &1734708727
@@ -1168,7 +1168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7725c9bd334914ea4778a4d87ca413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  son: {fileID: 0}
   levelSuivant: Scene_Grotte
 --- !u!82 &1734708728
 AudioSource:
@@ -1243,6 +1242,7 @@ MonoBehaviour:
   couleurSortie: {r: 1, g: 0, b: 0, a: 1}
   tailleEntrer: 32
   tailleSortie: 30
+  son: {fileID: 8300000, guid: 13cfdd77dd4c1634c95b73211be8f1fe, type: 3}
 --- !u!1001 &1893460013
 Prefab:
   m_ObjectHideFlags: 0
@@ -1720,5 +1720,144 @@ Transform:
   m_LocalRotation: {x: 7.17643125e-05, y: .0573553368, z: -.000187184938, w: .998353839}
   m_LocalPosition: {x: -9.80908203, y: 6.07735109, z: -21.9547729}
   m_LocalScale: {x: .362500042, y: .0249997769, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &2109452843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2109452848}
+  - 132: {fileID: 2109452847}
+  - 114: {fileID: 2109452846}
+  - 82: {fileID: 2109452845}
+  - 114: {fileID: 2109452844}
+  m_Layer: 0
+  m_Name: GUI Text Option
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2109452844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109452843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7725c9bd334914ea4778a4d87ca413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelSuivant: MenuOption
+--- !u!82 &2109452845
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109452843}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &2109452846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109452843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2d82841cb9ba34d82625e40de2c2dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  couleurEntrer: {r: 1, g: 0, b: 0, a: 1}
+  couleurSortie: {r: 1, g: 1, b: 1, a: 1}
+  tailleEntrer: 32
+  tailleSortie: 30
+  son: {fileID: 8300000, guid: ee768b292f35abc409f7a5b75d3830af, type: 3}
+--- !u!132 &2109452847
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109452843}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: ;  Option  +
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 9c90ff0279daca145bb9d7dfad83d3b2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278190335
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &2109452848
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109452843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .134119511, y: .408529282, z: -0}
+  m_LocalScale: {x: 1.03145409, y: 1, z: 1.03145409}
   m_Children: []
   m_Father: {fileID: 0}
