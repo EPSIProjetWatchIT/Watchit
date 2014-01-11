@@ -7,6 +7,7 @@ public class Clavier : MonoBehaviour {
 	private Mouvement mouv;
 	private bool droite = false;
 	private bool gauche = false;
+	private bool saut = false;
 
 	// Use this for initialization
 	void Start () {
@@ -25,14 +26,24 @@ public class Clavier : MonoBehaviour {
 			mouv.Gauche ();
 			gauche = true;
 		}
+		if (Input.GetKey (KeyCode.Space) && !saut) 
+		{
+			mouv.saut();
+			saut = true;
+		}
+		if(Input.GetKey(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
 
 		gauche = Input.GetKey (KeyCode.LeftArrow);
 		droite = Input.GetKey (KeyCode.RightArrow);
+		saut = Input.GetKey (KeyCode.Space);
 
 
 		if (Input.GetKey (KeyCode.UpArrow))
 		{
-			mouv.BrasDroit (2f);
+			mouv.BrasDroit (4f);
 		}
 		if (Input.GetKey (KeyCode.DownArrow))
 		{
