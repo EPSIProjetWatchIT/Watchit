@@ -6,7 +6,7 @@ public class Mouvement : MonoBehaviour {
 	private const float VITESSE = 5f;
 	private const float HAUTEURINIT = -0.78f;
 	private const float VITESSEROTATION = 50f;
-	private const float GRAVITE = 1f;
+	private const float GRAVITE = 1.4f;
 	private const float VOIEG = -0.4f;
 	private const float VOIED = 0.4f;
 	private const float VOIEM = 0f;

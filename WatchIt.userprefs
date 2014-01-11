@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\Scene_introduction\Script\PassSceneScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\Menu_ActionCo.js">
     <Files>
-      <File FileName="Assets\Scenes\Scene_introduction\Script\PassSceneScript.cs" Line="16" Column="43" />
+      <File FileName="Assets\Scripts\Menu\Menu_ActionCo.js" Line="7" Column="21" />
+      <File FileName="Assets\Scripts\Menu\Menu_Specifique.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Option.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Son.js" Line="3" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
