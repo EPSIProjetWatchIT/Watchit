@@ -20,15 +20,11 @@ public class GestionAffichageParcour : MonoBehaviour {
 		{
 			script.parcour1.SetActive(true);
 			script.parcour2.SetActive(false);
-			//parcour.GetComponent<MeshRenderer>().enabled = false;
-			//parcour.GetComponent<MeshRenderer>().enabled = true;
 		}
 		else
 		{
 			script.parcour1.SetActive(false);
 			script.parcour2.SetActive(true);
-			//parcour.GetComponent<MeshRenderer>().enabled = true;
-			//parcour.GetComponent<MeshRenderer>().enabled = false;
 		}
 	}
 }
