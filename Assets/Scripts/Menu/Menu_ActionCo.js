@@ -9,12 +9,15 @@ var son : AudioClip;
 function OnMouseEnter() {
     guiText.material.color = couleurEntrer;
     guiText.fontSize = tailleEntrer;
+    
+    audio.volume = 0.5;	
     audio.PlayOneShot(son);
 }
 
 function OnMouseExit() {
     guiText.material.color = couleurSortie;
     guiText.fontSize = tailleSortie;
+    audio.Stop();
 }
 
 @script RequireComponent (AudioSource)

@@ -1004,7 +1004,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4294910208
+    rgba: 4280418048
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1697288069
@@ -1029,8 +1029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2d82841cb9ba34d82625e40de2c2dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleurEntrer: {r: 0, g: .996078432, b: .707559109, a: 1}
-  couleurSortie: {r: 0, g: 1, b: .668965578, a: 1}
+  couleurEntrer: {r: 0, g: .996078432, b: .129411772, a: 1}
+  couleurSortie: {r: 0, g: .996078432, b: .129411772, a: 1}
   tailleEntrer: 32
   tailleSortie: 30
   son: {fileID: 8300000, guid: 8f0aa2397b67c0348a546fa5139ec16d, type: 3}
@@ -1716,8 +1716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2d82841cb9ba34d82625e40de2c2dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleurEntrer: {r: 1, g: 0, b: 0, a: 1}
-  couleurSortie: {r: 1, g: 0, b: 0, a: 1}
+  couleurEntrer: {r: .996078432, g: .227450982, b: 0, a: 1}
+  couleurSortie: {r: .996078432, g: .227450982, b: 0, a: 1}
   tailleEntrer: 32
   tailleSortie: 30
   son: {fileID: 8300000, guid: 5f02dd169444d4b4bb641801f416eebc, type: 3}
@@ -1741,7 +1741,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278205183
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &2033362005
@@ -1922,8 +1922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2d82841cb9ba34d82625e40de2c2dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  couleurEntrer: {r: 1, g: 0, b: 0, a: 1}
-  couleurSortie: {r: 1, g: 1, b: 1, a: 1}
+  couleurEntrer: {r: .980392158, g: .996078432, b: 0, a: 1}
+  couleurSortie: {r: .980392158, g: .996078432, b: 0, a: 1}
   tailleEntrer: 32
   tailleSortie: 30
   son: {fileID: 8300000, guid: e6254020218e1de47a079a9205b81434, type: 3}
@@ -1947,7 +1947,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278255611
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &2109452848
