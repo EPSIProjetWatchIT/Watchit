@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class Mouvement : MonoBehaviour {
 	
 	private const float VITESSE = 5f;
@@ -110,8 +112,8 @@ public class Mouvement : MonoBehaviour {
 		{
 			VITESSESAUT = VITESSE;
 			sautEnCour = true;
-			//AudioSource son;
-			//son.PlayOneShot("saut",0.245);
+			//AudioClip son;
+			//audio.PlayOneShot(son,0.245f);
 		}
 	}
 	
