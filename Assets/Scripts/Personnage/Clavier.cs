@@ -5,14 +5,12 @@ public class Clavier : MonoBehaviour {
 
 
 	private Mouvement mouv;
-
 	private bool droite = false;
 	private bool gauche = false;
 
 	// Use this for initialization
 	void Start () {
 		mouv = gameObject.GetComponent ("Mouvement") as Mouvement;
-
 	}
 	
 	// Update is called once per frame
@@ -27,7 +25,6 @@ public class Clavier : MonoBehaviour {
 			mouv.Gauche ();
 			gauche = true;
 		}
-
 
 		gauche = Input.GetKey (KeyCode.LeftArrow);
 		droite = Input.GetKey (KeyCode.RightArrow);

@@ -72,6 +72,7 @@
      <Compile Include="Assets\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\GestureMouv.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MenuPauseGesture.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
@@ -83,8 +84,10 @@
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
+     <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
+     <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />
      <Compile Include="Assets\Scripts\Personnage\Clavier.cs" />
      <Compile Include="Assets\Scripts\Personnage\Collisions.cs" />

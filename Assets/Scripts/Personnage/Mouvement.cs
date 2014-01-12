@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Mouvement : MonoBehaviour {
 	
-	private const float VITESSE = 3f;
+	private const float VITESSE = 5f;
 	private const float VITESSEROTATION = 50f;
 	private const float VOIEG = -0.4f;
 	private const float VOIED = 0.4f;
@@ -61,14 +61,14 @@ public class Mouvement : MonoBehaviour {
 
 	public void BrasDroit(float degres)
 	{
-		GameObject brasDroit = GameObject.Find ("EpauleDroit");
+		GameObject brasDroit = GameObject.Find ("DroitEpaule");
 		brasDroit.transform.Rotate (0f, 0f, -brasDroit.transform.rotation.z);
 		brasDroit.transform.Rotate (0f, 0f, degres);
 	}
 
 	public void BrasGauche(float degres)
 	{
-		GameObject brasGauche = GameObject.Find ("EpauleGauche");
+		GameObject brasGauche = GameObject.Find ("GaucheEpaule");
 		brasGauche.transform.Rotate (0f, 0f, -brasGauche.transform.rotation.z);
 		brasGauche.transform.Rotate (0f, 0f, degres);
 	}

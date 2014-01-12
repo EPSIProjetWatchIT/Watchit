@@ -4,9 +4,11 @@ using System.Collections;
 public class Affichage : MonoBehaviour {
 
 	private Perso personnage;
-	private SkeletonWrapper sw;
+
+	public SkeletonWrapper sw;
 	// Use this for initialization
 	void Start () {
+
 		personnage = GameObject.Find("Personnage").GetComponent("Perso") as Perso;
 	
 	}

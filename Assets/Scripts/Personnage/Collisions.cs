@@ -5,7 +5,7 @@ using System;
 public class Collisions : MonoBehaviour {
 
 	private Perso personage;
-	private DateTime dernierVirage;
+	private static SupprimeEffet viragePrecedent = null;
 	// Use this for initialization
 	void Start () {
 		personage = gameObject.GetComponent ("Perso") as Perso;
@@ -26,12 +26,18 @@ public class Collisions : MonoBehaviour {
 			personage.AltereVie (life.variation);
 		}
 
-		if (other.gameObject.tag == "Droite") {
-						SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
-						if (!virage.traverse) {
-								transform.Rotate (Vector3.up * 45f);
-								virage.traverse = true;
-						}
+		if (other.gameObject.tag == "Droite") 
+		{
+			SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
+			if (!virage.traverse) 
+			{
+				transform.Rotate (Vector3.up * 45f);
+				transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
+				if(viragePrecedent != null)
+					viragePrecedent.traverse = false;
+				viragePrecedent = virage;
+				virage.traverse = true;
+			}
 		}
 		else
 		{
@@ -39,7 +45,11 @@ public class Collisions : MonoBehaviour {
 				SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
 				if (!virage.traverse)
 				{
-					transform.Rotate (Vector3.up * -45.42f);
+					transform.Rotate (Vector3.up * -45f);
+					transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
+					if(viragePrecedent != null)
+						viragePrecedent.traverse = false;
+					viragePrecedent = virage;
 					virage.traverse = true;
 				}
 			}
