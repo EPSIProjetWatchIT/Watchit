@@ -37,6 +37,15 @@ public class Perso : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Vie == 0) 
+		{
+			Mort(Score);
+		}
 	
+	}
+
+	private void Mort(int score)
+	{
+		Application.LoadLevel("MenuAvecMinion");
 	}
 }
