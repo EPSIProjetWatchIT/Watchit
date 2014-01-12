@@ -25,7 +25,7 @@ public class Menu_Option : MonoBehaviour {
 
 	void OnMouseUp(){
 		//vitesse = 1;
-		GameObject.Find("Main Camera").active = false;
-		GameObject.Find("Camera Option").active = true;
+		GameObject.Find ("Main Camera").SetActive (false);
+		GameObject.Find ("Camera Option").SetActive (true);
 	}
 }
