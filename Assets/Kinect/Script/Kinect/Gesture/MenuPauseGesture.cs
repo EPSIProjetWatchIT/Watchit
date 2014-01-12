@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MenuPauseGesture : MonoBehaviour {
 
-	private SkeletonWrapper sw;
+	public SkeletonWrapper sw;
 	[HideInInspector]
 	public Kinect.NuiSkeletonTrackingState[] players;
 	[HideInInspector]
@@ -12,16 +12,16 @@ public class MenuPauseGesture : MonoBehaviour {
 	public DeviceOrEmulator devOrEmu;
 	private Vector3[,] bonePos;
 	public bool isBreak=false;
-	private Kinect.KinectInterface kinect;
+
 
 	// Use this for initialization
 	void Start () {
-		kinect = devOrEmu.getKinect();
+
 		players = new Kinect.NuiSkeletonTrackingState[Kinect.Constants.NuiSkeletonCount];
 		trackedPlayers = new int[Kinect.Constants.NuiSkeletonMaxTracked];
 		trackedPlayers[0] = -1;
 
-		
+		sw = new SkeletonWrapper ();
 		bonePos = new Vector3[2, (int)Kinect.NuiSkeletonPositionIndex.Count];
 	}
 	
@@ -35,7 +35,7 @@ public class MenuPauseGesture : MonoBehaviour {
 	{
 		isBreak = false;
 
-	if (kinect.pollSkeleton ()) {
+	if (sw.pollSkeleton ()) {
 			
 			Vector3 handRight = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HandRight];
 			Vector3 handLeft = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HandLeft];
