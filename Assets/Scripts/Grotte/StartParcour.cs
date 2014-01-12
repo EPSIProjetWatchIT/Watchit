@@ -39,6 +39,8 @@ public class StartParcour : MonoBehaviour {
 
 		parcour1 = GameObject.Find("Parcour1");
 		parcour2 = GameObject.Find("Parcour2");
+
+		/*
 		foreach(GameObject grotteEnCour in  GameObject.FindGameObjectsWithTag ("tunel"))
 		{
 			if(nbTunelVide == 0)
@@ -116,7 +118,7 @@ public class StartParcour : MonoBehaviour {
 			{
 				nbTunelVide --;
 			}
-		}
+		}*/
 		for (int i=0; i<=4; i++)
 		{
 			elements[i].SetActive(false);
