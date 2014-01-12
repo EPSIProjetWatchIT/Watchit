@@ -110,6 +110,8 @@ public class Mouvement : MonoBehaviour {
 		{
 			VITESSESAUT = VITESSE;
 			sautEnCour = true;
+			//AudioSource son;
+			//son.PlayOneShot("saut",0.245);
 		}
 	}
 	
