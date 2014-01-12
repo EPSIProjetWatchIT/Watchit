@@ -1,8 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{B56F8D55-57A4-6130-DD37-FA7954913737}") = "Watchit", "Assembly-CSharp-firstpass-vs.csproj", "{14D43482-53DA-302E-1522-25407B3284EE}"
-EndProject
 Project("{B56F8D55-57A4-6130-DD37-FA7954913737}") = "Watchit", "Assembly-CSharp-vs.csproj", "{1C09369F-29C4-14D4-C980-635AB981BEDF}"
 EndProject
 Global
@@ -11,10 +9,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{14D43482-53DA-302E-1522-25407B3284EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14D43482-53DA-302E-1522-25407B3284EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14D43482-53DA-302E-1522-25407B3284EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14D43482-53DA-302E-1522-25407B3284EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C09369F-29C4-14D4-C980-635AB981BEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C09369F-29C4-14D4-C980-635AB981BEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C09369F-29C4-14D4-C980-635AB981BEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																												GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

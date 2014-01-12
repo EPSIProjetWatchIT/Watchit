@@ -5,22 +5,16 @@ using Kinect;
 
 public class MainTracked : MonoBehaviour {
 
-	private SkeletonWrapper sw;
-	[HideInInspector]
-	public Kinect.NuiSkeletonTrackingState[] players;
-	[HideInInspector]
-	public int[] trackedPlayers;
+	public SkeletonWrapper sw;
+
 	private Vector3[,] rawBonePos;
-	public DeviceOrEmulator devOrEmu;
+
 
 	private Kinect.KinectInterface kinect;
 	// Use this for initialization
 	void Start () {
 	
-		players = new Kinect.NuiSkeletonTrackingState[Kinect.Constants.NuiSkeletonCount];
-		trackedPlayers = new int[Kinect.Constants.NuiSkeletonMaxTracked];
-		trackedPlayers[0] = -1;
-		sw = new SkeletonWrapper ();
+	
 
 
 	}
