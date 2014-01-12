@@ -16,11 +16,11 @@ public class MainTracked : MonoBehaviour {
 	private Kinect.KinectInterface kinect;
 	// Use this for initialization
 	void Start () {
-		kinect = devOrEmu.getKinect();
+	
 		players = new Kinect.NuiSkeletonTrackingState[Kinect.Constants.NuiSkeletonCount];
 		trackedPlayers = new int[Kinect.Constants.NuiSkeletonMaxTracked];
 		trackedPlayers[0] = -1;
-
+		sw = new SkeletonWrapper ();
 
 
 	}
@@ -28,17 +28,19 @@ public class MainTracked : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		int handRight = (int)Kinect.NuiSkeletonPositionIndex.HandRight;
-		if (sw == null) {
-			return;
-		}
+
+
 		if (sw.pollSkeleton ()) {
-			
-			rawBonePos[0, handRight] = kinect.getSkeleton().SkeletonData[trackedPlayers[0]].SkeletonPositions[handRight];
+			int handRight = (int)Kinect.NuiSkeletonPositionIndex.HandRight;
+			//sw.bonePos[0,handRight];
+						//rawBonePos [0, handRight] = kinect.getSkeleton ().SkeletonData [trackedPlayers [0]].SkeletonPositions [handRight];
+			transform.position = new Vector3 (sw.bonePos[0,handRight].x, sw.bonePos[0,handRight].y, transform.position.z);
 
 
-
-		}
+		
+				} else {
+			transform.position=new Vector3(0,0,0);
+				}
 	
 	}
 }
