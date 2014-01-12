@@ -1,4 +1,5 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs">
     <Files>
@@ -14,6 +15,16 @@
       <File FileName="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs" Line="47" Column="1" />
       <File FileName="Assets\Kinect\Script\Kinect\KinectModelControllers\KinectPointController.cs" Line="1" Column="1" />
       <File FileName="Assets\Kinect\Script\Kinect\Gesture\GestureMouv.cs" Line="50" Column="1" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\Menu_ActionCo.js">
+    <Files>
+      <File FileName="Assets\Scripts\Menu\Menu_Son.js" Line="12" Column="21" />
+      <File FileName="Assets\Scripts\Menu\Menu_Son.js" Line="12" Column="10" />
+      <File FileName="Assets\Scripts\Menu\Menu_ActionCo.js" Line="23" Column="10" />
+      <File FileName="Assets\Scripts\Menu\Menu_Specifique.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Option.cs" Line="1" Column="1" />
+>>>>>>> 80145567af4f309477745388b22f38737b73e28a
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
