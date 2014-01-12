@@ -46,7 +46,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\GestureGoRight.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\GestureMouv.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\HandMinion.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MenuPauseGesture.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayColor.cs" />

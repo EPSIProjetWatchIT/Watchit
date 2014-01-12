@@ -5,13 +5,9 @@ using Kinect;
 public class GestureMouv : MonoBehaviour {
 
 
-	private Kinect.KinectInterface kinect;
-	[HideInInspector]
-	public Kinect.NuiSkeletonTrackingState[] players;
-	[HideInInspector]
-	public int[] trackedPlayers;
+
 	private Vector3[,] rawBonePos;
-	public DeviceOrEmulator devOrEmu;
+
 	public SkeletonWrapper sw;
 	[HideInInspector]
 	public Vector3[,] bonePos;
@@ -22,11 +18,6 @@ public class GestureMouv : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		kinect = devOrEmu.getKinect();
-		players = new Kinect.NuiSkeletonTrackingState[Kinect.Constants.NuiSkeletonCount];
-		trackedPlayers = new int[Kinect.Constants.NuiSkeletonMaxTracked];
-		trackedPlayers[0] = -1;
-
 
 
 		bonePos = new Vector3[2,(int)Kinect.NuiSkeletonPositionIndex.Count];
@@ -38,7 +29,7 @@ public class GestureMouv : MonoBehaviour {
 	}
 
 	void GoLeft(){
-		if (kinect.pollSkeleton ()) {
+		if (sw.pollSkeleton ()) {
 						Vector3 shoulderRightGo = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight];
 						Vector3 shoulderLeftGo = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderLeft];
 						if ((shoulderRightGo.y > shoulderLeftGo.y)) {
@@ -50,7 +41,7 @@ public class GestureMouv : MonoBehaviour {
 
 	void GoRight()
 	{
-		if (kinect.pollSkeleton ()) {
+		if (sw.pollSkeleton ()) {
 			Vector3 shoulderRightGo = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight];
 			Vector3 shoulderLeftGo = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderLeft];
 			if ((shoulderLeftGo.y > shoulderRightGo.y)) {
@@ -71,7 +62,7 @@ public class GestureMouv : MonoBehaviour {
 
 	void GetJump()
 	{
-		if (kinect.pollSkeleton ()) {
+		if (sw.pollSkeleton ()) {
 			Vector3 shoulderRight = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight];
 			Vector3 footRight = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.FootRight];
 			if ((shoulderRight.y-footRight.y) > (tallInit+tallInit*0.3)) {
