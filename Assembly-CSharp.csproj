@@ -46,6 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\GestureMouv.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MenuPauseGesture.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectModelControllers\KinectPointController.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\DepthWrapper.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\DeviceOrEmulator.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectEmulator.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectInterop.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectSensor.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
      <Compile Include="Assets\Scenes\Scene_introduction\Script\PassSceneScript.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
@@ -55,17 +69,18 @@
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />
      <Compile Include="Assets\Scripts\Personnage\Clavier.cs" />
      <Compile Include="Assets\Scripts\Personnage\Collisions.cs" />
+     <Compile Include="Assets\Scripts\Personnage\KinectMouv.cs" />
      <Compile Include="Assets\Scripts\Personnage\Mouvement.cs" />
      <Compile Include="Assets\Scripts\Personnage\Perso.cs" />
      <Compile Include="Assets\Scripts\Personnage\Sautillement.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Kinect\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{63F4A93D-7E02-B09C-C230-182B19E10BA8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
       <Project>{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>

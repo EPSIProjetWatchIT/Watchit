@@ -1,8 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{F30F3A9A-996C-0FB5-B24A-444D68FFA35D}") = "WatchGit", "Assembly-CSharp-firstpass.csproj", "{63F4A93D-7E02-B09C-C230-182B19E10BA8}"
-EndProject
 Project("{F30F3A9A-996C-0FB5-B24A-444D68FFA35D}") = "WatchGit", "Assembly-CSharp.csproj", "{9CC13FBD-7A38-9BF9-EA21-A0F2D154C6B0}"
 EndProject
 Project("{F30F3A9A-996C-0FB5-B24A-444D68FFA35D}") = "WatchGit", "Assembly-UnityScript-firstpass.unityproj", "{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{63F4A93D-7E02-B09C-C230-182B19E10BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{63F4A93D-7E02-B09C-C230-182B19E10BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{63F4A93D-7E02-B09C-C230-182B19E10BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{63F4A93D-7E02-B09C-C230-182B19E10BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9CC13FBD-7A38-9BF9-EA21-A0F2D154C6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9CC13FBD-7A38-9BF9-EA21-A0F2D154C6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CC13FBD-7A38-9BF9-EA21-A0F2D154C6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																						GlobalSection(MonoDevelopProperties) = preSolution
+																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
