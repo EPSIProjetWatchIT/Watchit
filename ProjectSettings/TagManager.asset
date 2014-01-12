@@ -13,6 +13,8 @@ TagManager:
   - Alarm
   - Droite
   - Gauche
+  - tunel
+  - 
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -50,4 +52,8 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    userID: 1
+    uniqueID: 5079321
     locked: 0

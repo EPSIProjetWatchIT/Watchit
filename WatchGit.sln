@@ -7,6 +7,8 @@ Project("{F30F3A9A-996C-0FB5-B24A-444D68FFA35D}") = "WatchGit", "Assembly-CSharp
 EndProject
 Project("{F30F3A9A-996C-0FB5-B24A-444D68FFA35D}") = "WatchGit", "Assembly-UnityScript-firstpass.unityproj", "{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}"
 EndProject
+Project("{F30F3A9A-996C-0FB5-B24A-444D68FFA35D}") = "WatchGit", "Assembly-UnityScript.unityproj", "{0DDBE485-1F95-AE68-B4E3-1C9E79A57D68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C87CF20A-E2EE-6AE2-A05C-22FB01392D0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DDBE485-1F95-AE68-B4E3-1C9E79A57D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DDBE485-1F95-AE68-B4E3-1C9E79A57D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DDBE485-1F95-AE68-B4E3-1C9E79A57D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DDBE485-1F95-AE68-B4E3-1C9E79A57D68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -47,4 +53,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal
