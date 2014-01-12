@@ -20,7 +20,6 @@ public class MainTracked : MonoBehaviour {
 		players = new Kinect.NuiSkeletonTrackingState[Kinect.Constants.NuiSkeletonCount];
 		trackedPlayers = new int[Kinect.Constants.NuiSkeletonMaxTracked];
 		trackedPlayers[0] = -1;
-		sw = new SkeletonWrapper ();
 
 
 	}
@@ -39,7 +38,7 @@ public class MainTracked : MonoBehaviour {
 
 		
 				} else {
-			transform.position=new Vector3(0,0,0);
+			transform.position=new Vector3(0.82f,0.38f,1f);
 				}
 	
 	}
