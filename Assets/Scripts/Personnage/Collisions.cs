@@ -4,11 +4,15 @@ using System;
 
 public class Collisions : MonoBehaviour {
 
+	public AudioSource sonCollision;
 	private Perso personage;
 	private static SupprimeEffet viragePrecedent = null;
+	private Mouvement mouv;
 	// Use this for initialization
 	void Start () {
 		personage = gameObject.GetComponent ("Perso") as Perso;
+		mouv = gameObject.GetComponent ("Mouvement") as Mouvement;
+
 	
 	}
 	
@@ -24,6 +28,8 @@ public class Collisions : MonoBehaviour {
 		{
 			LifeChanges life = other.gameObject.GetComponent("LifeChanges") as LifeChanges;
 			personage.AltereVie (life.variation);
+			mouv.saut(false);
+			sonCollision.Play();
 		}
 
 		if (other.gameObject.tag == "Droite") 
