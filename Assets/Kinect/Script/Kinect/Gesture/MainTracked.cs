@@ -37,6 +37,7 @@ public class MainTracked : MonoBehaviour {
 			rawBonePos[0, handRight] = kinect.getSkeleton().SkeletonData[trackedPlayers[0]].SkeletonPositions[handRight];
 
 
+
 		}
 	
 	}

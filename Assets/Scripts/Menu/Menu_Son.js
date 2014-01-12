@@ -3,8 +3,13 @@
 var son : AudioClip;
 
 
-function OnMouseUp() { 
+function OnMouseUp() {
+		 audio.volume = 0.5;	 
          audio.PlayOneShot(son);
+}
+
+function OnMouseExit() { 
+         audio.Stop();
 }
 
 @script RequireComponent (AudioSource)

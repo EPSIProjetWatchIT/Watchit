@@ -8,7 +8,7 @@ public class Affichage : MonoBehaviour {
 	public SkeletonWrapper sw;
 	// Use this for initialization
 	void Start () {
-
+		sw = new SkeletonWrapper ();
 		personnage = GameObject.Find("Personnage").GetComponent("Perso") as Perso;
 	
 	}
