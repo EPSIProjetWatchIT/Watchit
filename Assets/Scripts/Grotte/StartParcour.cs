@@ -5,8 +5,8 @@ public class StartParcour : MonoBehaviour {
 
 	private const float SOL = -0.8f;
 	private const float PLAFOND = 1f;
-	private const float VOIEG = -0.6f;
-	private const float VOIED = 0.6f;
+	private const float VOIEG = -0.8f;
+	private const float VOIED = 0.8f;
 	private const float VOIEM = 0f;
 	private const float DEBUTTUNEL = -3.5f;
 	private const float FINTUNEL = 2.5f;

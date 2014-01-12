@@ -6,9 +6,10 @@ public class Mouvement : MonoBehaviour {
 	private const float VITESSE = 5f;
 	private const float HAUTEURINIT = -0.78f;
 	private const float VITESSEROTATION = 50f;
+	private const float VITESSECHANGEMENTVOIE = 2f;
 	private const float GRAVITE = 1.4f;
-	private const float VOIEG = -0.6f;
-	private const float VOIED = 0.6f;
+	private const float VOIEG = -0.08f;
+	private const float VOIED = 0.08f;
 	private const float VOIEM = 0f;
 	private const float ANGLEMAXSUP = -80f;
 	private const float ANGLEMAXINF = 65f;
@@ -52,29 +53,40 @@ public class Mouvement : MonoBehaviour {
 		//Changements de voies
 		if ((_positionCible == VOIED && _positionActuelle == VOIEM) || (_positionCible == VOIEM && _positionActuelle == VOIEG)) 
 		{
-			minion.transform.Translate (Vector3.right * VOIED);
-			_positionActuelle = _positionActuelle==VOIEG?VOIEM:VOIED;
+			minion.transform.Translate (Vector3.right * VITESSECHANGEMENTVOIE * Time.deltaTime);
+			if(_positionCible <= minion.transform.localPosition.x)
+			{
+				_positionActuelle = _positionCible;
+				minion.transform.localPosition = new Vector3(_positionActuelle,minion.transform.localPosition.y, minion.transform.localPosition.z);
+			}
+
+			//_positionActuelle = _positionActuelle==VOIEG?VOIEM:VOIED;
 		}
 		else if ((_positionCible == VOIEG && _positionActuelle == VOIEM) || (_positionCible == VOIEM && _positionActuelle == VOIED)) 
 		{
-			minion.transform.Translate (Vector3.right * VOIEG);
-			_positionActuelle = _positionActuelle == VOIED?VOIEM:VOIEG; 
+			minion.transform.Translate (Vector3.left * VITESSECHANGEMENTVOIE * Time.deltaTime);
+			if(_positionCible >= minion.transform.localPosition.x)
+			{
+				_positionActuelle = _positionCible;
+				minion.transform.localPosition = new Vector3( _positionActuelle,minion.transform.localPosition.y, minion.transform.localPosition.z);
+			}
+			//_positionActuelle = _positionActuelle == VOIED?VOIEM:VOIEG; 
 		}
     }
 
 	public void Droite()
 	{
-		if(_positionActuelle == VOIEM)
+		if(_positionCible == VOIEM)
 			_positionCible = VOIED;
-		if(_positionActuelle == VOIEG)
+		if(_positionCible == VOIEG)
 			_positionCible = VOIEM;
 	}
 
 	public void Gauche()
 	{
-		if(_positionActuelle == VOIEM)
+		if(_positionCible == VOIEM)
 			_positionCible = VOIEG;
-		if(_positionActuelle == VOIED)
+		if(_positionCible == VOIED)
 			_positionCible = VOIEM;
 	}
 
