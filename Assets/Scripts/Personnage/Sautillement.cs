@@ -3,22 +3,41 @@ using System.Collections;
 
 public class Sautillement : MonoBehaviour {
 	
-	private const float HAUTEURINIT = 0;
-	private const float GRAVITE = 3f;
-	private float VITESSESAUT = 5f;
+	private float HAUTEURMIN = 0f;
+	private float HAUTEURMAX = 0.005f;
+	private float HAUTEUR;
+	private float VITESSE = 0.25f;
+	//private float VITESSE = 0.012f;//Valeur si on utilise pas le deltaTime
+	private bool down =false;
+	private bool up = true;
 
 
 	// Use this for initialization
 	void Start () {
+		HAUTEUR = HAUTEURMIN;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (Vector3.up * VITESSESAUT * Time.deltaTime);
-		VITESSESAUT = VITESSESAUT - GRAVITE;
-		if (transform.localPosition.y < HAUTEURINIT)
+		//On est en dessous du sol ou au sol, on rebondit
+		if ((HAUTEUR <= HAUTEURMIN && down) ||(HAUTEUR >= HAUTEURMAX && up))
 		{
-			transform.localPosition = new Vector3 (transform.localPosition.x, HAUTEURINIT, transform.localPosition.z);
+			if(HAUTEUR < HAUTEURMIN)
+			{
+				transform.localPosition = new Vector3(transform.localPosition.x, HAUTEURMIN, transform.localPosition.z);
+			}
+
+			if(HAUTEUR > HAUTEURMAX)
+			{
+				transform.localPosition = new Vector3(transform.localPosition.x, HAUTEURMAX, transform.localPosition.z);
+			}
+			VITESSE = -VITESSE;
+			down = !down;
+			up = !up;
 		}
+
+
+		transform.Translate (Vector3.up * VITESSE *Time.deltaTime);
+		HAUTEUR = transform.localPosition.y;
 	}
 }
