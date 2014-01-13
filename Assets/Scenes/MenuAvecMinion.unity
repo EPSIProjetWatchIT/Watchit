@@ -155,7 +155,7 @@ GameObject:
   - 132: {fileID: 123554714}
   m_Layer: 0
   m_Name: GUI Text WatchIT
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -393,7 +393,7 @@ GameObject:
   - 114: {fileID: 525631574}
   m_Layer: 0
   m_Name: GUI Main
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,6 +782,56 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1893460013}
   m_GameObject: {fileID: 848912997}
   m_Mesh: {fileID: 4300010, guid: 2019ee91c6c25d54da00e3d93fba0cc6, type: 3}
+--- !u!1 &869663684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 869663686}
+  - 132: {fileID: 869663685}
+  m_Layer: 0
+  m_Name: Affichage chargement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &869663685
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869663684}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Chargement...
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 9c90ff0279daca145bb9d7dfad83d3b2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 56
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278387711
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &869663686
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 869663684}
+  m_LocalRotation: {x: .0523889884, y: 0, z: 0, w: .998626769}
+  m_LocalPosition: {x: .479999989, y: .839810014, z: -8.13386536}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1000753668
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1212,7 @@ GameObject:
   - 114: {fileID: 1697288071}
   m_Layer: 0
   m_Name: GUI Text Quitter
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1295,13 +1345,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1734708726}
+  - 114: {fileID: 1734708730}
   - 132: {fileID: 1734708725}
   - 114: {fileID: 1734708729}
   - 82: {fileID: 1734708728}
   - 114: {fileID: 1734708727}
   m_Layer: 0
   m_Name: GUI Text Jouer
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1426,6 +1477,17 @@ MonoBehaviour:
   tailleEntrer: 32
   tailleSortie: 30
   son: {fileID: 8300000, guid: 13cfdd77dd4c1634c95b73211be8f1fe, type: 3}
+--- !u!114 &1734708730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734708724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b547d6405080c49b72b73f4f97b828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1893460013
 Prefab:
   m_ObjectHideFlags: 0
@@ -1919,7 +1981,7 @@ GameObject:
   - 114: {fileID: 2109452844}
   m_Layer: 0
   m_Name: GUI Text Option
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

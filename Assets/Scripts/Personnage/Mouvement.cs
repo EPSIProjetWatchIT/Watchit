@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(AudioSource))]
 
 public class Mouvement : MonoBehaviour {
 	
@@ -21,7 +20,7 @@ public class Mouvement : MonoBehaviour {
 	private float VITESSESAUT = 0f;
 	private Perso personnage;
 	private GameObject minion;
-
+	public AudioSource sonSaut;
 	
     // Use this for initialization
     void Start()
@@ -106,14 +105,14 @@ public class Mouvement : MonoBehaviour {
 		brasGauche.transform.Rotate (0f, 0f, degres);
 	}
 
-	public void saut()
+	public void saut(bool son = true)
 	{
 		if (!sautEnCour)
 		{
 			VITESSESAUT = VITESSE;
 			sautEnCour = true;
-			//AudioClip son;
-			//audio.PlayOneShot(son,0.245f);
+			if (son)
+				sonSaut.Play();
 		}
 	}
 	
