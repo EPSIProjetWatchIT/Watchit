@@ -467,7 +467,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 594411540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.32755184, y: 6.97975826, z: -5.32446289}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensorHeight: 1
-  kinectCenter: {x: 0, y: 0, z: 0}
+  kinectCenter: {x: 0, y: 0, z: 7}
   lookAt: {x: 0, y: 0, z: 0, w: 0}
   smoothing: .5
   correction: .5
