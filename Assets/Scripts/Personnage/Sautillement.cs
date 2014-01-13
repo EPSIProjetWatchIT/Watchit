@@ -13,9 +13,10 @@ public class Sautillement : MonoBehaviour {
 	public AudioSource footstep;
 
 
+
 	private GameObject brasGauche;
 	private GameObject brasDroit;
-	private float VitesseBras = 15f;
+	private float VitesseBras = 500f;
 	private bool BGForward = true;
 	private bool BDForward = false;
 	private float LimiteMax = 50f;
@@ -27,6 +28,7 @@ public class Sautillement : MonoBehaviour {
 		HAUTEUR = HAUTEURMIN;
 		brasDroit = GameObject.Find ("DroitEpaule");
 		brasGauche = GameObject.Find ("GaucheEpaule");
+
 	}
 	
 	// Update is called once per frame
@@ -58,8 +60,8 @@ public class Sautillement : MonoBehaviour {
 			BDForward = !BDForward;
 			BGForward = !BGForward;
 		}
-		brasDroit.transform.Rotate (Vector3.up * -VitesseBras);// * Time.deltaTime);
-		brasGauche.transform.Rotate (Vector3.up * VitesseBras);// * Time.deltaTime);
+		brasDroit.transform.Rotate (Vector3.up * -VitesseBras * Time.deltaTime);
+		brasGauche.transform.Rotate (Vector3.up * VitesseBras * Time.deltaTime);
 
 
 	}

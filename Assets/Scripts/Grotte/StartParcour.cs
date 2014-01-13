@@ -33,6 +33,7 @@ public class StartParcour : MonoBehaviour {
 	int ajoute = 0;
 	public bool avance = false;
 	private Camera cameraScene;
+	private 
 
 	// Use this for initialization
 	void Start () {
@@ -64,6 +65,9 @@ public class StartParcour : MonoBehaviour {
 		GROTTES = GameObject.FindGameObjectsWithTag ("tunel");
 		grottesParcours1 = new GameObject[GROTTES.Length]; //On a un tableau pour le parcours 1 a générer en premier
 		grottesParcours2 = new GameObject[GROTTES.Length];//Et un tableau pour le parcours 2, qui se génerera pendant le parcour 1
+
+		//Si on est en mode tuto
+
 
 		//On trie les grottes entre les deux parcour
 		foreach (GameObject g in GROTTES) {
