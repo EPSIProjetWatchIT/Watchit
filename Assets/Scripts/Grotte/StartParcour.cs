@@ -31,25 +31,39 @@ public class StartParcour : MonoBehaviour {
 	private bool ParcoursComplets = false;
 	GameObject[] morceau = new GameObject[4];
 	int ajoute = 0;
+	public bool avance = false;
+	private Camera cameraScene;
 
 	// Use this for initialization
 	void Start () {
-		//Instanciation des variables avant desactivation, pour garder une trace.
-
+		cameraScene = Camera.main;
 		probabiliteObstacle = PROBAINIT;
 
+		//Instanciation des variables avant desactivation, pour garder une trace.
 		elements[0] = GameObject.Find("Bat");
 		elements[1] = GameObject.Find("PierreSolitaire");
 		elements[2] = GameObject.Find("Stalagmite");
 		elements[3] = GameObject.Find("Stalagtite");
 		elements[4] = GameObject.Find("LigneDePierre");
 
+		//On desactive les obstacles de bases pour ne pas les avoir a l'écran
+		for (int i=0; i<=4; i++)
+		{
+			elements[i].SetActive(false);
+		}
+
+		//On enregistre les parcours 
 		parcour1 = GameObject.Find("Parcour1");
 		parcour2 = GameObject.Find("Parcour2");
 
+		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
+		parcour1.SetActive (true);
+		parcour2.SetActive (false);
+
+		//On recherches les grottes du jeu
 		GROTTES = GameObject.FindGameObjectsWithTag ("tunel");
-		grottesParcours1 = new GameObject[GROTTES.Length];
-		grottesParcours2 = new GameObject[GROTTES.Length];
+		grottesParcours1 = new GameObject[GROTTES.Length]; //On a un tableau pour le parcours 1 a générer en premier
+		grottesParcours2 = new GameObject[GROTTES.Length];//Et un tableau pour le parcours 2, qui se génerera pendant le parcour 1
 
 		//On trie les grottes entre les deux parcour
 		foreach (GameObject g in GROTTES) {
@@ -66,22 +80,16 @@ public class StartParcour : MonoBehaviour {
 				}
 		//On génère uniquement les obstacles de la partie 1 avant le jeu
 		genererObstacles (grottesParcours1, compteurParcours1);
-
-		//On desactive les obstacles de bases pour ne pas les avoir a l'écran
-		for (int i=0; i<=4; i++)
-		{
-			elements[i].SetActive(false);
-		}
-
-		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
-		parcour1.SetActive (true);
-		parcour2.SetActive (false);
+		cameraScene.farClipPlane = 20;
+		GameObject.Find ("Affichage chargement").SetActive (false);
+		avance = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		//Ici on génère le parcours 2 pendant qu'on cours
-		if (!ParcoursComplets) 
+		if (!ParcoursComplets && avance) 
 		{
 			ajoute = 0;
 			for (int i = 0; i<=3; i++) 
@@ -143,6 +151,7 @@ public class StartParcour : MonoBehaviour {
 						elementCopie = elements[hasard];
 						nouvelElement = Instantiate(elementCopie,Vector3.zero, Quaternion.Euler(0f,0f,0f)) as GameObject;
 						nouvelElement.transform.parent = grotteEnCour.transform;
+						nouvelElement.SetActive(true);
 						if(obstacleParLigne == 2)
 						{
 							voieChoisie = obstacle == 1 ? voie1 : voie2;

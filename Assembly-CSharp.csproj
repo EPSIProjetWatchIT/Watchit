@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
      <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
+     <Compile Include="Assets\Scripts\Menu\Chargement.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu_Option.cs" />
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />
      <Compile Include="Assets\Scripts\Personnage\Clavier.cs" />

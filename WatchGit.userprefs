@@ -1,20 +1,41 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Personnage\Mouvement.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\Menu_Specifique.js">
     <Files>
+      <File FileName="Assets\Scripts\Menu\Chargement.cs" Line="28" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Option.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Sautillement.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Personnage\KinectMouv.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Personnage\Collisions.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\Mouvement.cs" Line="88" Column="29" />
-      <File FileName="Assets\Scripts\Grotte\StartParcour.cs" Line="89" Column="17" />
+      <File FileName="Assets\Scripts\Personnage\Mouvement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Grotte\StartParcour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scenes\Scene_introduction\Script\PassSceneScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Affichage.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_Specifique.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\Menu_ActionCo.js" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Scenes" expanded="True">
+              <Node name="Scene_introduction" expanded="True">
+                <Node name="Script" expanded="True" />
+              </Node>
+            </Node>
             <Node name="Scripts" expanded="True">
-              <Node name="Grotte" expanded="True" />
-              <Node name="Personnage" expanded="True">
-                <Node name="Mouvement.cs" selected="True" />
+              <Node name="Grotte" expanded="True">
+                <Node name="Elements" expanded="True" />
+              </Node>
+              <Node name="Menu" expanded="True" />
+              <Node name="Personnage" expanded="True" />
+            </Node>
+            <Node name="Standard Assets" expanded="True" />
+          </Node>
+          <Node name="Assembly-UnityScript" expanded="True">
+            <Node name="Scripts" expanded="True">
+              <Node name="Menu" expanded="True">
+                <Node name="Menu_Specifique.js" selected="True" />
               </Node>
             </Node>
           </Node>

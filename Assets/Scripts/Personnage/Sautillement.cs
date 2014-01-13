@@ -10,6 +10,7 @@ public class Sautillement : MonoBehaviour {
 	//private float VITESSE = 0.012f;//Valeur si on utilise pas le deltaTime
 	private bool down =false;
 	private bool up = true;
+	public AudioSource footstep;
 
 
 	// Use this for initialization
