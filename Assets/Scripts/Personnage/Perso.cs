@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class Perso : MonoBehaviour {
-	
+
 	private const int VIEMAX = 100;
+	private GameObject target; 
 	
 	public int Vie
 	{
@@ -27,6 +28,10 @@ public class Perso : MonoBehaviour {
 	public void AltereVie(int variation)
 	{
 		Vie = Vie + variation >= VIEMAX ? VIEMAX : Vie + variation <= 0 ? 0 : Vie + variation;
+
+			GameObject go = GameObject.Find("Capsule HealthBar");
+		    HealthBar other = (HealthBar) go.GetComponent(typeof(HealthBar));
+			other.AdjustcurHealth (-(int)variation);
 	}
 
 

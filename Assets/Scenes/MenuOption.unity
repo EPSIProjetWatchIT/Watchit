@@ -2316,7 +2316,6 @@ GameObject:
   - 114: {fileID: 2132670209}
   - 82: {fileID: 2132670211}
   - 114: {fileID: 2132670210}
-  - 114: {fileID: 2132670212}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -2480,15 +2479,3 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &2132670212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2132670203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546896a750224cf49b35fe53e45bda95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sw: {fileID: 0}

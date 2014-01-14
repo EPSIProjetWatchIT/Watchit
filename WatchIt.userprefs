@@ -1,13 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\Menu_ChangeSceneCollision.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Personnage\Perso.cs">
     <Files>
-      <File FileName="Assets\Scripts\Menu\Menu_ChangeSceneCollision.cs" Line="112" Column="4" />
-      <File FileName="Assets\Scripts\Menu\Menu_ChangeSceneCollision.cs" Line="131" Column="1" />
-      <File FileName="Assets\Scripts\Menu\CollisionDetection.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\Chargement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Menu\Menu_ActionCo.js" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\FollowMouse.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\HealthBar.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Perso.cs" Line="27" Column="2" />
+      <File FileName="Assets\Scripts\Personnage\Affichage.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

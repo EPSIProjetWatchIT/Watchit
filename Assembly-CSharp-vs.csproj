@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />
      <Compile Include="Assets\Scripts\Personnage\Clavier.cs" />
      <Compile Include="Assets\Scripts\Personnage\Collisions.cs" />
+     <Compile Include="Assets\Scripts\Personnage\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Personnage\KinectMouv.cs" />
      <Compile Include="Assets\Scripts\Personnage\Mouvement.cs" />
      <Compile Include="Assets\Scripts\Personnage\Perso.cs" />
