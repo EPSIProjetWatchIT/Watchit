@@ -39,7 +39,7 @@ public class Perso : MonoBehaviour {
 	void Update () {
 		if (Vie == 0) 
 		{
-			//Mort(Score);
+			Mort(Score);
 		}
 	
 	}

@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_1;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_1;UNITY_4_3;UNITY_64;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,11 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\GestureGoRight.cs" />
-     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\GestureMouv.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\HandMinion.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs" />
-     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MenuPauseGesture.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayDepth.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectModelControllers\KinectModelControllerV2.cs" />
@@ -62,7 +59,7 @@
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
-     <Compile Include="Assets\Scene_Cinematiques\Scripts\PassSceneScript.cs" />
+     <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\PassSceneScript.cs" />
      <Compile Include="Assets\Scripts\Fichiers.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />

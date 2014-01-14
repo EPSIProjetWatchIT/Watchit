@@ -82,17 +82,7 @@ public class KinectMouv : MonoBehaviour {
 				}
 	}
 
-	void GetInitSkeleton ()
-	{
-		
-		Vector3 shoulderCenterInit = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderCenter];
-		Vector3 footLeftInit = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.FootLeft];
-		Vector3 footRightInit = bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.FootRight];
-		
-		
-		tallInit = shoulderCenterInit.y - footLeftInit.y;
-	}
-	
+
 	void MenuDetection()
 	{
 		Vector3 handRight = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HandRight];

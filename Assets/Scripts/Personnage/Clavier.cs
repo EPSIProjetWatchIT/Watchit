@@ -36,7 +36,7 @@ public class Clavier : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.Escape))
 		{
-			Application.Quit();
+			Application.LoadLevel("MenuAvecMinion");
 		}
 		if(Input.GetKey(KeyCode.P) && !appuieP)
 		{

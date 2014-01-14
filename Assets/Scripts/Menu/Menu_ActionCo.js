@@ -10,7 +10,7 @@ function OnMouseEnter() {
     guiText.material.color = couleurEntrer;
     guiText.fontSize = tailleEntrer;
     
-    audio.volume = 0.5;	
+    audio.volume = 1;	
     audio.PlayOneShot(son);
 }
 
