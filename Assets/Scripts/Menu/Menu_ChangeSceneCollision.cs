@@ -15,6 +15,8 @@ public class Menu_ChangeSceneCollision : MonoBehaviour {
 	bool isOnEasy = false;
 	bool isOnMedium = false;
 	bool isOnHard = false;
+	bool isOnRecommencerGrotte = false;
+	bool isOnQuitterGameOver = false;
 
 	public AudioClip sonJouer;
 	public AudioClip sonOption;
@@ -23,6 +25,8 @@ public class Menu_ChangeSceneCollision : MonoBehaviour {
 	public AudioClip sonEasy;
 	public AudioClip sonMedium;
 	public AudioClip sonHard;
+	public AudioClip sonRecommencerGrotte;
+	public AudioClip sonQuitterGameOver;
 
 	void Update(){
 		if (isOn){
@@ -62,36 +66,50 @@ public class Menu_ChangeSceneCollision : MonoBehaviour {
 			isOnHard = true;
 			audio.PlayOneShot(sonHard,0.9f);
 		}
+		if (collision.gameObject.name == "Cube RecommencerGrotte") {
+			isOnRecommencerGrotte = true;
+			audio.PlayOneShot(sonRecommencerGrotte,0.9f);
+		}
+		if (collision.gameObject.name == "Cube QuitterGameOver") {
+			isOnQuitterGameOver = true;
+			audio.PlayOneShot(sonQuitterGameOver,0.9f);
+		}
 	}
 
 	void OnCollisionStay(Collision collision) {
-		Debug.Log ("OnCollisionStay");
+				Debug.Log ("OnCollisionStay");
 
-		if (time > 3f) {
-			if (isOnJouer) {
-				Application.LoadLevel ("Scene_Grotte"); 
-			}
-			if (isOnOption) {
-				Application.LoadLevel ("MenuOption");
-			}
-			if (isOnQuitter) {
-				Application.Quit ();
+				if (time > 3f) {
+						if (isOnJouer) {
+								Application.LoadLevel ("Scene_Grotte"); 
+						}
+						if (isOnOption) {
+								Application.LoadLevel ("MenuOption");
+						}
+						if (isOnQuitter) {
+								Application.Quit ();
 				
-			}
-			if (isOnValiderOption) {
-				Application.LoadLevel ("MenuAvecMinion"); 
-			}
-			if (isOnEasy) {
-				//TODO
- 			}
-			if (isOnMedium) {
-				//TODO
-			}
-			if(isOnHard){
-				//TODO
-			}
+						}
+						if (isOnValiderOption) {
+								Application.LoadLevel ("MenuAvecMinion"); 
+						}
+						if (isOnEasy) {
+								Fichiers.setDifficulte (1);
+						}
+						if (isOnMedium) {
+								Fichiers.setDifficulte (2);
+						}
+						if (isOnHard) {
+								Fichiers.setDifficulte (3);
+						}
+						if (isOnRecommencerGrotte) {
+								Application.LoadLevel ("Scene_Grotte");
+						}
+						if (isOnQuitterGameOver) {
+								Application.LoadLevel ("MenuAvecMinion"); 
+						}
+				}
 		}
-	}
 
 	void OnCollisionExit(Collision collision) {
 		Debug.Log ("OnCollisionExit");
@@ -104,6 +122,8 @@ public class Menu_ChangeSceneCollision : MonoBehaviour {
 		isOnEasy = false;
 		isOnMedium = false;
 		isOnHard = false;
+		isOnRecommencerGrotte = false;
+		isOnQuitterGameOver = false;
 		//audio.Stop();
 	}
 

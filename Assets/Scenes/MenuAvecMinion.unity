@@ -1079,6 +1079,7 @@ GameObject:
   - 114: {fileID: 1228599286}
   - 114: {fileID: 1228599291}
   - 114: {fileID: 1228599293}
+  - 114: {fileID: 1228599294}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1189,10 +1190,24 @@ MonoBehaviour:
   sonJouer: {fileID: 0}
   sonOption: {fileID: 0}
   sonQuitter: {fileID: 0}
-  sonValider: {fileID: 0}
+  sonValiderOption: {fileID: 0}
   sonEasy: {fileID: 0}
   sonMedium: {fileID: 0}
   sonHard: {fileID: 0}
+  sonRecommencerGrotte: {fileID: 0}
+  sonQuitterGameOver: {fileID: 0}
+--- !u!114 &1228599294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1228599285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546896a750224cf49b35fe53e45bda95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sw: {fileID: 0}
 --- !u!1 &1290189877
 GameObject:
   m_ObjectHideFlags: 0

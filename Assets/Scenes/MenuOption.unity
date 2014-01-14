@@ -385,7 +385,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -497,7 +497,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1431,7 +1431,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1481,7 +1481,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1826546307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.6339207, y: 7.11196184, z: -12.3454361}
+  m_LocalPosition: {x: -10.9986515, y: 7.11196184, z: -12.3454361}
   m_LocalScale: {x: 4, y: .800000012, z: .800000012}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2041,7 +2041,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2316,6 +2316,7 @@ GameObject:
   - 114: {fileID: 2132670209}
   - 82: {fileID: 2132670211}
   - 114: {fileID: 2132670210}
+  - 114: {fileID: 2132670212}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -2419,6 +2420,8 @@ MonoBehaviour:
   sonEasy: {fileID: 0}
   sonMedium: {fileID: 0}
   sonHard: {fileID: 0}
+  sonRecommencerGrotte: {fileID: 0}
+  sonQuitterGameOver: {fileID: 0}
 --- !u!82 &2132670211
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2477,3 +2480,15 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &2132670212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132670203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546896a750224cf49b35fe53e45bda95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sw: {fileID: 0}
