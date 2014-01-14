@@ -62,7 +62,7 @@
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectRecorder.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
-     <Compile Include="Assets\Scenes\Scene_introduction\Script\PassSceneScript.cs" />
+     <Compile Include="Assets\Scene_Cinematiques\Scripts\PassSceneScript.cs" />
      <Compile Include="Assets\Scripts\Fichiers.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" />
      <Compile Include="Assets\Scripts\Grotte\Elements\LifeChanges.cs" />
@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
      <Compile Include="Assets\Scripts\Menu\Chargement.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu_Option.cs" />
+     <Compile Include="Assets\Scripts\Menu\keepKinectAlive.cs" />
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />
      <Compile Include="Assets\Scripts\Personnage\Clavier.cs" />
      <Compile Include="Assets\Scripts\Personnage\Collisions.cs" />

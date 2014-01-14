@@ -21,12 +21,17 @@ public class Mouvement : MonoBehaviour {
 	private Perso personnage;
 	private GameObject minion;
 	public AudioSource sonSaut;
+	private bool Estpause = false;
+	private GameObject pauseText;
+	private float timeScaleDeBase;
 	
     // Use this for initialization
     void Start()
     {
 		personnage = gameObject.GetComponent ("Perso") as Perso;
 		minion = transform.FindChild ("Minion").gameObject;
+		pauseText = GameObject.Find ("Affichage pause");
+		timeScaleDeBase = Time.timeScale;
     }
 
     // Update is called once per frame
@@ -114,6 +119,13 @@ public class Mouvement : MonoBehaviour {
 			if (son)
 				sonSaut.Play();
 		}
+	}
+
+	public void pause()
+	{
+		Estpause= !Estpause;
+		Time.timeScale = Estpause ? 0 : timeScaleDeBase;
+		pauseText.guiText.text = Estpause ? "Pause" : "";
 	}
 	
 }

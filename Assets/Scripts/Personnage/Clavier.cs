@@ -8,16 +8,13 @@ public class Clavier : MonoBehaviour {
 	private bool droite = false;
 	private bool gauche = false;
 	private bool saut = false;
-	private bool pause = false;
 	private bool appuieP = false;
-	private float timeScaleDeBase;
-	private GameObject pauseText;
+
+
 
 	// Use this for initialization
 	void Start () {
 		mouv = gameObject.GetComponent ("Mouvement") as Mouvement;
-		timeScaleDeBase = Time.timeScale;
-		pauseText = GameObject.Find ("Affichage pause");
 	}
 	
 	// Update is called once per frame
@@ -43,9 +40,8 @@ public class Clavier : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.P) && !appuieP)
 		{
-			pause= !pause;
-			Time.timeScale = pause ? 0 : timeScaleDeBase;
-			pauseText.guiText.text = pause ? "Pause" : "";
+			mouv.pause();
+			appuieP = true;
 		}
 
 

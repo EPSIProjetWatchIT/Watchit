@@ -39,13 +39,14 @@ public class Perso : MonoBehaviour {
 	void Update () {
 		if (Vie == 0) 
 		{
-			Mort(Score);
+			//Mort(Score);
 		}
 	
 	}
 
 	private void Mort(int score)
 	{
-		Application.LoadLevel("MenuAvecMinion");
+		Application.LoadLevel("GameOver");
+		GameObject.Destroy (GameObject.Find ("KinectPrefab"));
 	}
 }
