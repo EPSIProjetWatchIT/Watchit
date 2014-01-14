@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{9CC13FBD-7A38-9BF9-EA21-A0F2D154C6B0}</ProjectGuid>
+	<ProjectGuid>{1C09369F-29C4-14D4-C980-635AB981BEDF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
      <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
      <Compile Include="Assets\Scripts\Menu\Chargement.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu_ChangeSceneCollision.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu_Option.cs" />
      <Compile Include="Assets\Scripts\Menu\keepKinectAlive.cs" />
      <Compile Include="Assets\Scripts\Personnage\Affichage.cs" />

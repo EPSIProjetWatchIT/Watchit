@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 3b0cc6244b691fd439e4ca6f5be7e68e
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - sonJouer: {fileID: 8300000, guid: 13cfdd77dd4c1634c95b73211be8f1fe, type: 3}
+  - sonOption: {fileID: 8300000, guid: ee768b292f35abc409f7a5b75d3830af, type: 3}
+  - sonQuitter: {fileID: 8300000, guid: a9a18e8c5da9c71468368e0147bffd87, type: 3}
+  - sonValider: {fileID: 8300000, guid: 8f0aa2397b67c0348a546fa5139ec16d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

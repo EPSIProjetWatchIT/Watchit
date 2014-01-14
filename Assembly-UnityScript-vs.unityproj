@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{0DDBE485-1F95-AE68-B4E3-1C9E79A57D68}</ProjectGuid>
+	<ProjectGuid>{CC84D0D6-02CF-1999-AE59-102BDD1EA0AF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -39,14 +39,16 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\FollowMouse.js" />
      <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\AudioScript.js" />
+     <Compile Include="Assets\Scripts\Menu\CollisionDetection.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_ActionCo.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_Curseur.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_Son.js" />
