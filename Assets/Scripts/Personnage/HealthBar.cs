@@ -6,7 +6,6 @@ public class HealthBar : MonoBehaviour {
 	
 	private int maxHealth = 100;
 	public int curHealth = 100;
-	public int adj;
 	private float healthBarlenght;
 	private Perso personnage;
 	
@@ -17,25 +16,12 @@ public class HealthBar : MonoBehaviour {
 	}
 
 	void Update(){
-		AdjustcurHealth (0) ;
+		curHealth = personnage.Vie;
+		healthBarlenght = (Screen.width / 2) * (curHealth / (float)maxHealth);
 	}
 
 	void OnGUI () {
 		GUI.Box(new Rect(10, 10, healthBarlenght, 20), curHealth + "/" + maxHealth);
 	}
 		
-	public void AdjustcurHealth(int adj) {
-		curHealth += adj;
-		
-		if(curHealth < 0)
-			curHealth = 0;
-		
-		if(curHealth > maxHealth)
-			curHealth = maxHealth;
-		
-		if(maxHealth < 1)
-			maxHealth = 1;
-		
-		healthBarlenght = (Screen.width / 2) * (curHealth / (float)maxHealth);
-	}
 }
