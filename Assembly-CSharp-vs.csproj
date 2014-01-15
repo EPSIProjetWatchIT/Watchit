@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
      <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
      <Compile Include="Assets\Scripts\Menu\Chargement.cs" />
+     <Compile Include="Assets\Scripts\Menu\CollisionGameOver.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu_ChangeSceneCollision.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu_Option.cs" />
      <Compile Include="Assets\Scripts\Menu\keepKinectAlive.cs" />
