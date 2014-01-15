@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\FollowMouse.js" />
      <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\AudioScript.js" />
      <Compile Include="Assets\Scripts\Menu\CollisionDetection.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_ActionCo.js" />

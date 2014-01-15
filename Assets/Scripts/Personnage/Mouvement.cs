@@ -23,6 +23,8 @@ public class Mouvement : MonoBehaviour {
 	public AudioSource sonSaut;
 	private bool Estpause = false;
 	private GameObject pauseText;
+	private GameObject PauseContinuerText;
+	private GameObject PauseQuitterText;
 	private float timeScaleDeBase;
 	
     // Use this for initialization
@@ -30,7 +32,9 @@ public class Mouvement : MonoBehaviour {
     {
 		personnage = gameObject.GetComponent ("Perso") as Perso;
 		minion = transform.FindChild ("Minion").gameObject;
-		pauseText = GameObject.Find ("Affichage pause");
+		pauseText = GameObject.Find ("GuiPause");
+		PauseQuitterText = GameObject.Find ("GuiQuitter");
+		PauseContinuerText = GameObject.Find ("GuiContinuer");
 		timeScaleDeBase = Time.timeScale;
     }
 
@@ -126,6 +130,8 @@ public class Mouvement : MonoBehaviour {
 		Estpause= !Estpause;
 		Time.timeScale = Estpause ? 0 : timeScaleDeBase;
 		pauseText.guiText.text = Estpause ? "Pause" : "";
+		PauseContinuerText.guiText.text = Estpause ? "Continuer" : ""; 
+		PauseQuitterText.guiText.text = Estpause ? "Quitter" : "";
 	}
 	
 }
