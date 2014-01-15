@@ -18,7 +18,7 @@ public class Menu_ChangeSceneCollision : MonoBehaviour {
 	bool isOnRecommencerGrotte = false;
 	bool isOnQuitterGameOver = false;
 
-	public AudioClip sonJouer;
+	public AudioSource sonJouer;
 	public AudioClip sonOption;
 	public AudioClip sonQuitter;
 	public AudioClip sonValiderOption;
@@ -40,7 +40,8 @@ public class Menu_ChangeSceneCollision : MonoBehaviour {
 
 		if (collision.gameObject.name == "Cube Jouer") {
 			isOnJouer = true;
-			audio.PlayOneShot(sonJouer,0.9f);
+			//audio.PlayOneShot(sonJouer,0.9f);
+			sonJouer.Play();
 				}
 		if (collision.gameObject.name == "Cube Option") {
 			isOnOption = true;

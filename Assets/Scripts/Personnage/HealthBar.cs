@@ -5,7 +5,7 @@ public class HealthBar : MonoBehaviour {
 
 	
 	private int maxHealth = 100;
-	public int curHealth = 90;
+	public int curHealth = 100;
 	public int adj;
 	private float healthBarlenght;
 	private Perso personnage;

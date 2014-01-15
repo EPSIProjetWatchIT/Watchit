@@ -1186,7 +1186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0cc6244b691fd439e4ca6f5be7e68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonJouer: {fileID: 0}
+  sonJouer: {fileID: 8300000, guid: 13cfdd77dd4c1634c95b73211be8f1fe, type: 3}
   sonOption: {fileID: 0}
   sonQuitter: {fileID: 0}
   sonValiderOption: {fileID: 0}

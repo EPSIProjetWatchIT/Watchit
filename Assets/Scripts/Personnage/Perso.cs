@@ -29,9 +29,9 @@ public class Perso : MonoBehaviour {
 	{
 		Vie = Vie + variation >= VIEMAX ? VIEMAX : Vie + variation <= 0 ? 0 : Vie + variation;
 
-			GameObject go = GameObject.Find("Capsule HealthBar");
-		    HealthBar other = (HealthBar) go.GetComponent(typeof(HealthBar));
-			other.AdjustcurHealth (-(int)variation);
+			//GameObject go = GameObject.Find("Capsule HealthBar");
+		    //HealthBar other = (HealthBar) go.GetComponent(typeof(HealthBar));
+			//other.AdjustcurHealth (-(int)variation);
 	}
 
 
