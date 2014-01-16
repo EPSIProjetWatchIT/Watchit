@@ -1913,7 +1913,6 @@ MonoBehaviour:
   jouer: {fileID: 0}
   option: {fileID: 0}
   quitter: {fileID: 0}
-  tableauBoolPos: 
   sw: {fileID: 62104775}
 --- !u!82 &2055215209
 AudioSource:
