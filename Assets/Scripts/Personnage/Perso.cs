@@ -4,7 +4,8 @@ using System.Collections;
 public class Perso : MonoBehaviour {
 
 	private const int VIEMAX = 100;
-	private GameObject target; 
+	private GameObject target;
+	private Fichiers sauvegarde;
 	
 	public int Vie
 	{
@@ -34,6 +35,7 @@ public class Perso : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Vie = VIEMAX;
+		sauvegarde = GameObject.Find ("Parcour").GetComponent ("Fichiers") as Fichiers;
 	}
 	
 	// Update is called once per frame
@@ -45,9 +47,20 @@ public class Perso : MonoBehaviour {
 	
 	}
 
+	private void EnregistreScore(int score)
+	{
+		Fichiers.setScore (score);
+	}
+
 	private void Mort(int score)
 	{
+		EnregistreScore (score);
 		Application.LoadLevel("GameOver");
-		GameObject.Destroy (GameObject.Find ("KinectPrefab"));
+	}
+
+	private void Gagne(int score)
+	{
+		EnregistreScore (score);
+		Application.LoadLevel ("Victoire");
 	}
 }

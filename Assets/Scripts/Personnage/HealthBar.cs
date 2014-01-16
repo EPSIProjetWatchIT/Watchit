@@ -5,8 +5,10 @@ public class HealthBar : MonoBehaviour {
 
 	
 	private int maxHealth = 100;
+	private int tailleScore = 150;
 	private int curHealth;
 	private float healthBarlenght;
+	private float scoreBarlenght;
 	private Perso personnage;
 	
 	void Start(){
@@ -22,6 +24,7 @@ public class HealthBar : MonoBehaviour {
 
 	void OnGUI () {
 		GUI.Box(new Rect(10, 10, healthBarlenght, 20), curHealth + "/" + maxHealth);
+		GUI.Label (new Rect (Screen.width - tailleScore, 10, tailleScore, 30), "Score : " + personnage.Score.ToString());
 	}
 		
 }
