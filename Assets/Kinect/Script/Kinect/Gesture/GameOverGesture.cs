@@ -9,6 +9,8 @@ public class GameOverGesture : MonoBehaviour {
 	private bool jouerson1 = true;
 	private bool jouerson2 = true;
 
+	public string scene;
+
 	public AudioClip recommencer;
 	public AudioClip quitter;
 	
@@ -66,7 +68,7 @@ public class GameOverGesture : MonoBehaviour {
 			if (pass && peuxValider)
 			{
 				if (tableauBoolPos[0])
-					Application.LoadLevel("Scene_grotte");
+					Application.LoadLevel(scene);
 				if (tableauBoolPos[1])
 					Application.LoadLevel("MenuAvecMinion");
 
@@ -92,13 +94,12 @@ public class GameOverGesture : MonoBehaviour {
 		
 		// check
 		if ((handLeft.y < hipMiddle.y)) 
-			pass=true;
+			peuxValider = true;
 		
-		//MG < Hanche
+		//MG > Epaules
 		if ((handLeft.y > shoulderLeft.y))
 		{
-			peuxValider = true;
-			pass = false;
+			pass = peuxValider ? true : false;
 		}
 		
 		//main d au dessus ep
