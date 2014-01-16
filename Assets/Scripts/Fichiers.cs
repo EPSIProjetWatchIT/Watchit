@@ -4,7 +4,7 @@ using System.IO;
 
 public class Fichiers : MonoBehaviour {
 
-	private static int[] SCORES = {0,0,0,0,0};
+	public static int[] SCORES = {0,0,0,0,0};
 
 
 	// Use this for initialization
