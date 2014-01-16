@@ -12,22 +12,20 @@ public class KinectMenuOption : MonoBehaviour {
 	public SkeletonWrapper sw;
 	[HideInInspector]
 	public Vector3[,] bonePos;
+
+	public AudioClip facile;
+	public AudioClip moyen;
+	public AudioClip difficile;
 	
 	private bool pass;
 	
-	
+	private bool jouerson1 = true;
+	private bool jouerson2 = true;
+	private bool jouerson3 = true;
 	
 	
 	private GameObject[] menu = new GameObject[3];
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	// Use this for initialization
 	void Start () {
@@ -46,9 +44,33 @@ public class KinectMenuOption : MonoBehaviour {
 			for(int i=0;i<=2;i++)
 			{
 				menu[i].guiText.text = tableauBoolPos[i] ? options[i]+suppl[i] : options[i];
+
+				if(tableauBoolPos[0]&&jouerson1)
+				{
+					audio.Stop();
+					audio.volume = 1;
+					audio.PlayOneShot(facile);
+					jouerson1 = false;
+				}
+				
+				if(tableauBoolPos[1]&&jouerson2)
+				{
+					audio.Stop();
+					audio.volume = 1;
+					audio.PlayOneShot(moyen);
+					jouerson2 = false;
+				}
+				
+				if(tableauBoolPos[2]&&jouerson3)
+				{
+					audio.Stop();
+					audio.volume = 1;
+					audio.PlayOneShot(difficile);
+					jouerson3 = false;
+				}
 			}
 			
-			if (pass && peuxValider)
+			if (pass)
 			{
 				if (tableauBoolPos[0])
 					Application.LoadLevel("MenuAvecMinion");
@@ -78,26 +100,35 @@ public class KinectMenuOption : MonoBehaviour {
 		
 		// check
 		if ((handLeft.y > shoulderLeft.y)) 
-			pass=true;
+			pass = peuxValider ? true : false;
 		
 		//main d au dessus ep
-		if ((handRight.y > shoulderRight.y)) 
-			tableauBoolPos [0] = true;
+		if ((handRight.y > shoulderRight.y)) {
+						tableauBoolPos [0] = true;
+			jouerson2=true;
+			jouerson3=true;
+				}
 		
 		
 		//main d entre Ep et Hanche
-		if ((handRight.y < shoulderRight.y) && (handRight.y > hipMiddle.y)) 
-			tableauBoolPos [1] = true;
+		if ((handRight.y < shoulderRight.y) && (handRight.y > hipMiddle.y))
+		{
+						tableauBoolPos [1] = true;
+			jouerson1=true;
+			jouerson3=true;
+				}
 		
 		// main droite sous hanche
-		if ((handRight.y < hipMiddle.y)) 
-			tableauBoolPos [2] = true;
+		if ((handRight.y < hipMiddle.y)) {
+						tableauBoolPos [2] = true;
+			jouerson1=true;
+			jouerson2=true;
+				}
 
 		//MG < Hanche
-		if ((handLeft.y > shoulderLeft.y))
+		if ((handLeft.y < hipMiddle.y))
 		{
 			peuxValider = true;
-			pass = false;
 		}
 		
 	}
