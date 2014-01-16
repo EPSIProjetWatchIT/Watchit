@@ -17,21 +17,13 @@ public class KinectMebu : MonoBehaviour {
 	public Vector3[,] bonePos;
 	
 	private bool pass;
-	
 
-
+	private bool jouerson1 = true;
+	private bool jouerson2 = true;
+	private bool jouerson3 = true;
 
 	private GameObject[] menu = new GameObject[3];
 
-	
-
-
-
-
-
-
-	
-	
 	// Use this for initialization
 	void Start () {
 		bonePos = new Vector3[2,(int)Kinect.NuiSkeletonPositionIndex.Count];
@@ -50,25 +42,28 @@ public class KinectMebu : MonoBehaviour {
 			{
 				menu[i].guiText.text = tableauBoolPos[i] ? options[i]+suppl[i] : options[i];
 
-				if(tableauBoolPos[i])
+				if(tableauBoolPos[0]&&jouerson1)
 				{
 					audio.Stop();
 					audio.volume = 1;
 					audio.PlayOneShot(jouer);
+					jouerson1 = false;
 				}
 
-				if(tableauBoolPos[i])
+				if(tableauBoolPos[1]&&jouerson2)
 				{
 					audio.Stop();
 					audio.volume = 1;
 					audio.PlayOneShot(option);
+					jouerson2 = false;
 				}
 
-				if(tableauBoolPos[i])
+				if(tableauBoolPos[2]&&jouerson3)
 				{
 					audio.Stop();
 					audio.volume = 1;
 					audio.PlayOneShot(quitter);
+					jouerson3 = false;
 				}
 
 			}
@@ -103,27 +98,33 @@ public class KinectMebu : MonoBehaviour {
 	
 		// check
 		if ((handLeft.y < hipMiddle.y)) 
-			pass=true;
-
-		//MG < Hanche
-		if ((handLeft.y > shoulderLeft.y))
-		{
 			peuxValider = true;
-			pass = false;
-		}
+
+		//MG > Epaule
+		if ((handLeft.y > shoulderLeft.y))
+			pass = peuxValider ? true : false;
 
 		//main d au dessus ep
-		if ((handRight.y > shoulderRight.y)) 
+		if ((handRight.y > shoulderRight.y)) {
 			tableauBoolPos [0] = true;
+			jouerson3 = true;
+			jouerson2 = true;
+		}
 
 
 		//main d entre Ep et Hanche
-		if ((handRight.y < shoulderRight.y) && (handRight.y > hipMiddle.y)) 
+		if ((handRight.y < shoulderRight.y) && (handRight.y > hipMiddle.y)) {
 			tableauBoolPos [1] = true;
+			jouerson1 = true;
+			jouerson3 = true;
+		}
 		
 		// main droite sous hanche
-		if ((handRight.y < hipMiddle.y)) 
+		if ((handRight.y < hipMiddle.y)) {
 			tableauBoolPos [2] = true;
+			jouerson2 = true;
+			jouerson1 = true;
+		}
 		
 	}
 }
