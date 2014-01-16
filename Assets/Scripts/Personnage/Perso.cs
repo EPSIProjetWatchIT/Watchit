@@ -5,7 +5,6 @@ public class Perso : MonoBehaviour {
 
 	private const int VIEMAX = 100;
 	private GameObject target;
-	private Fichiers sauvegarde;
 	
 	public int Vie
 	{
@@ -35,8 +34,7 @@ public class Perso : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Vie = VIEMAX;
-		sauvegarde = GameObject.Find ("Parcour").GetComponent ("Fichiers") as Fichiers;
-	}
+		}
 	
 	// Update is called once per frame
 	void Update () {
