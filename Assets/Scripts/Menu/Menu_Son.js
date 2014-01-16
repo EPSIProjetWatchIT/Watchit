@@ -4,7 +4,7 @@ var son : AudioClip;
 
 
 function OnMouseUp() {
-		 audio.volume = 0.5;	 
+		 audio.volume = 1;	 
          audio.PlayOneShot(son);
 }
 
