@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: ebc8a25f3546f6240aeadda693c8dfc4
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cylinder67
+    100004: Group44446
+    100006: Group44447
+    100008: Line955
+    100010: Line955.Line952
+    100012: Line955.Line952_MeshPart0
+    100014: Line955.Line952_MeshPart1
+    100016: Line955.Line952_MeshPart2
+    100018: Line955.Line953
+    100020: Line955.Line953_MeshPart0
+    100022: Line955.Line953_MeshPart1
+    100024: Line955.Line953_MeshPart2
+    100026: Line955_MeshPart0
+    100028: Line955_MeshPart1
+    100030: Line955_MeshPart2
+    100032: Line961
+    100034: Line963
+    100036: Line963_MeshPart0
+    100038: Line963_MeshPart1
+    100040: Line963_MeshPart2
+    100042: Lustre 2
+    100044: MurDroit
+    100046: plafon
+    100048: Sol
+    400000: //RootNode
+    400002: Cylinder67
+    400004: Group44446
+    400006: Group44447
+    400008: Line955
+    400010: Line955.Line952
+    400012: Line955.Line952_MeshPart0
+    400014: Line955.Line952_MeshPart1
+    400016: Line955.Line952_MeshPart2
+    400018: Line955.Line953
+    400020: Line955.Line953_MeshPart0
+    400022: Line955.Line953_MeshPart1
+    400024: Line955.Line953_MeshPart2
+    400026: Line955_MeshPart0
+    400028: Line955_MeshPart1
+    400030: Line955_MeshPart2
+    400032: Line961
+    400034: Line963
+    400036: Line963_MeshPart0
+    400038: Line963_MeshPart1
+    400040: Line963_MeshPart2
+    400042: Lustre 2
+    400044: MurDroit
+    400046: plafon
+    400048: Sol
+    2300000: Cylinder67
+    2300002: Line955.Line952_MeshPart0
+    2300004: Line955.Line952_MeshPart1
+    2300006: Line955.Line952_MeshPart2
+    2300008: Line955.Line953_MeshPart0
+    2300010: Line955.Line953_MeshPart1
+    2300012: Line955.Line953_MeshPart2
+    2300014: Line955_MeshPart0
+    2300016: Line955_MeshPart1
+    2300018: Line955_MeshPart2
+    2300020: Line961
+    2300022: Line963_MeshPart0
+    2300024: Line963_MeshPart1
+    2300026: Line963_MeshPart2
+    2300028: Lustre 2
+    2300030: MurDroit
+    2300032: plafon
+    2300034: Sol
+    3300000: Cylinder67
+    3300002: Line955.Line952_MeshPart0
+    3300004: Line955.Line952_MeshPart1
+    3300006: Line955.Line952_MeshPart2
+    3300008: Line955.Line953_MeshPart0
+    3300010: Line955.Line953_MeshPart1
+    3300012: Line955.Line953_MeshPart2
+    3300014: Line955_MeshPart0
+    3300016: Line955_MeshPart1
+    3300018: Line955_MeshPart2
+    3300020: Line961
+    3300022: Line963_MeshPart0
+    3300024: Line963_MeshPart1
+    3300026: Line963_MeshPart2
+    3300028: Lustre 2
+    3300030: MurDroit
+    3300032: plafon
+    3300034: Sol
+    4300000: Sol
+    4300002: plafon
+    4300004: MurDroit
+    4300006: Cylinder67
+    4300008: Line961
+    4300010: Line955_MeshPart0
+    4300012: Line955_MeshPart1
+    4300014: Line955_MeshPart2
+    4300016: Line955.Line952_MeshPart0
+    4300018: Line955.Line952_MeshPart1
+    4300020: Line955.Line952_MeshPart2
+    4300022: Lustre 2
+    4300024: Line955.Line953_MeshPart0
+    4300026: Line955.Line953_MeshPart1
+    4300028: Line955.Line953_MeshPart2
+    4300030: Line963_MeshPart0
+    4300032: Line963_MeshPart1
+    4300034: Line963_MeshPart2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
