@@ -9,7 +9,7 @@ public class Chargement : MonoBehaviour {
 	void Start () {
 		listeGui = GameObject.FindGameObjectsWithTag ("GuiMenu");
 		guiChargement = GameObject.Find ("Affichage chargement");
-		guiChargement.SetActive (false);
+		guiChargement.guiText.text = "";
 	}
 	
 	// Update is called once per frame
@@ -22,6 +22,7 @@ public class Chargement : MonoBehaviour {
 		foreach (GameObject gui in listeGui) {
 			gui.SetActive(false);		
 		}
-		guiChargement.SetActive (true);
+		guiChargement.guiText.text = "Chargement...";
+		Application.LoadLevel ("Scene_grotte");
 	}
 }

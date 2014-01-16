@@ -745,9 +745,9 @@ GUIText:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 869663684}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Text: Chargement...
+  m_Text: 
   m_Anchor: 1
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -1277,7 +1277,6 @@ GameObject:
   - 132: {fileID: 1734708725}
   - 114: {fileID: 1734708729}
   - 82: {fileID: 1734708728}
-  - 114: {fileID: 1734708727}
   m_Layer: 0
   m_Name: GUI Text Jouer
   m_TagString: GuiMenu
@@ -1319,18 +1318,6 @@ Transform:
   m_LocalScale: {x: .915315568, y: 1, z: 1.03145409}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1734708727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1734708724}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc7725c9bd334914ea4778a4d87ca413, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelSuivant: Quitter
 --- !u!82 &1734708728
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1411,7 +1398,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1734708724}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5b547d6405080c49b72b73f4f97b828, type: 3}
   m_Name: 
@@ -1910,9 +1897,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c155c08d2087f48bc84070e25da137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jouer: {fileID: 0}
-  option: {fileID: 0}
-  quitter: {fileID: 0}
+  jouer: {fileID: 8300000, guid: 13cfdd77dd4c1634c95b73211be8f1fe, type: 3}
+  option: {fileID: 8300000, guid: ee768b292f35abc409f7a5b75d3830af, type: 3}
+  quitter: {fileID: 8300000, guid: a9a18e8c5da9c71468368e0147bffd87, type: 3}
   sw: {fileID: 62104775}
 --- !u!82 &2055215209
 AudioSource:
