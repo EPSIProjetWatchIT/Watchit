@@ -10,6 +10,9 @@ public class KinectMebu : MonoBehaviour {
 	public AudioClip jouer;
 	public AudioClip option;
 	public AudioClip quitter;
+	public AudioClip chateau;
+
+	private float tallInit;
 
 	private bool[] tableauBoolPos = {false, false, false};
 	public SkeletonWrapper sw;
@@ -22,6 +25,8 @@ public class KinectMebu : MonoBehaviour {
 	private bool jouerson2 = true;
 	private bool jouerson3 = true;
 
+	private bool niveauChateau = false;
+
 	private GameObject[] menu = new GameObject[3];
 
 	// Use this for initialization
@@ -30,12 +35,16 @@ public class KinectMebu : MonoBehaviour {
 		menu [0] = GameObject.Find ("GUI Text Jouer");
 		menu [1] = GameObject.Find ("GUI Text Option");
 		menu [2] = GameObject.Find ("GUI Text Quitter");
+
+	
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		if (sw.pollSkeleton ()) {
+
+
 			MenuDetection ();
 
 			for(int i=0;i<=2;i++)
@@ -66,6 +75,15 @@ public class KinectMebu : MonoBehaviour {
 					jouerson3 = false;
 				}
 
+				if(niveauChateau)
+				{
+					audio.Stop();
+					audio.volume = 1;
+					audio.PlayOneShot(chateau);
+					niveauChateau=false;
+
+				}
+
 			}
 
 			if (pass && peuxValider)
@@ -89,6 +107,7 @@ public class KinectMebu : MonoBehaviour {
 		
 		Vector3 shoulderLeft = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderLeft];
 		Vector3 shoulderRight = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight];
+		Vector3 head = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.Head];
 
 		Vector3 hipMiddle = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HipCenter];
 
@@ -109,8 +128,20 @@ public class KinectMebu : MonoBehaviour {
 			tableauBoolPos [0] = true;
 			jouerson3 = true;
 			jouerson2 = true;
+
+				tallInit=shoulderRight.y;
+
 		}
 
+		if (handRight.y > head.y) {
+
+						if (tallInit - shoulderRight.y < (tallInit / 2)) {
+								niveauChateau = true;
+							jouerson2 = true;
+							jouerson1 = true;
+							jouerson3 = true;
+						}
+				}
 
 		//main d entre Ep et Hanche
 		if ((handRight.y < shoulderRight.y) && (handRight.y > hipMiddle.y)) {
