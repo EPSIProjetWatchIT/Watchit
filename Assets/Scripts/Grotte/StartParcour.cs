@@ -3,6 +3,9 @@ using System.Collections;
 
 public class StartParcour : MonoBehaviour {
 	
+	private const int DUR = 2;
+	private const int MOYEN = 1;
+	private const int FACILE = 0;
 	private const float SOL = -0.8f;
 	private const float PLAFOND = 1f;
 	private const float VOIEG = -0.8f;
@@ -33,12 +36,16 @@ public class StartParcour : MonoBehaviour {
 	int ajoute = 0;
 	public bool avance = false;
 	private Camera cameraScene;
-	private 
+	private int difficulte = 1;
 
 	// Use this for initialization
 	void Start () {
+
+		difficulte = Fichiers.getDifficulte ();
+		
+		probabiliteObstacle = difficulte == FACILE ? PROBAINIT - 10 : difficulte == MOYEN ? PROBAINIT : PROBAINIT + 10;
+
 		cameraScene = Camera.main;
-		probabiliteObstacle = PROBAINIT;
 
 		//Instanciation des variables avant desactivation, pour garder une trace.
 		elements[0] = GameObject.Find("Bat");
@@ -192,7 +199,7 @@ public class StartParcour : MonoBehaviour {
 						}
 					}
 					//On réinitialise la probabilité d'avoir un obstacle
-					probabiliteObstacle  = PROBAINIT;
+					probabiliteObstacle = difficulte == FACILE ? PROBAINIT - 10 : difficulte == MOYEN ? PROBAINIT : PROBAINIT + 10;
 				}
 				else
 				{

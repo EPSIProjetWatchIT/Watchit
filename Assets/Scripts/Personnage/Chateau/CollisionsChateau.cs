@@ -2,8 +2,8 @@
 using System.Collections;
 using System;
 
-public class Collisions : MonoBehaviour {
-
+public class CollisionsChateau : MonoBehaviour {
+	
 	public AudioSource sonCollision;
 	private Perso personage;
 	private static SupprimeEffet viragePrecedent = null;
@@ -12,18 +12,18 @@ public class Collisions : MonoBehaviour {
 	void Start () {
 		personage = gameObject.GetComponent ("Perso") as Perso;
 		mouv = gameObject.GetComponent ("Mouvement") as Mouvement;
-
-	
+		
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
-
+	
 	void OnTriggerEnter(Collider other)
 	{
-
+		
 		if (other.gameObject.tag == "lifeChanger")
 		{
 			LifeChanges life = other.gameObject.GetComponent("LifeChanges") as LifeChanges;
@@ -31,13 +31,13 @@ public class Collisions : MonoBehaviour {
 			mouv.saut(false);
 			sonCollision.Play();
 		}
-
+		
 		if (other.gameObject.tag == "Droite") 
 		{
 			SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
 			if (!virage.traverse) 
 			{
-				transform.Rotate (Vector3.up * 45f);
+				transform.Rotate (Vector3.up * 90f);
 				transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
 				if(viragePrecedent != null)
 					viragePrecedent.traverse = false;
@@ -51,7 +51,7 @@ public class Collisions : MonoBehaviour {
 				SupprimeEffet virage = other.gameObject.GetComponent ("SupprimeEffet") as SupprimeEffet;
 				if (!virage.traverse)
 				{
-					transform.Rotate (Vector3.up * -45f);
+					transform.Rotate (Vector3.up * -90f);
 					transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
 					if(viragePrecedent != null)
 						viragePrecedent.traverse = false;

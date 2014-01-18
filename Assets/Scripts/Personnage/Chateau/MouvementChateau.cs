@@ -2,13 +2,13 @@
 using System.Collections;
 
 
-public class Mouvement : MonoBehaviour {
+public class MouvementChateau: MonoBehaviour {
 	
 	private const float VITESSE = 5f;
-	private const float HAUTEURINIT = -0.78f;
+	private const float HAUTEURINIT = 0.07f;
 	private const float VITESSEROTATION = 50f;
 	private const float VITESSECHANGEMENTVOIE = 2f;
-	private const float GRAVITE = 1.4f;
+	private const float GRAVITE = 0.5f;
 	private const float VOIEG = -0.08f;
 	private const float VOIED = 0.08f;
 	private const float VOIEM = 0f;
@@ -27,20 +27,20 @@ public class Mouvement : MonoBehaviour {
 	private GameObject PauseQuitterText;
 	private float timeScaleDeBase;
 	
-    // Use this for initialization
-    void Start()
-    {
+	// Use this for initialization
+	void Start()
+	{
 		personnage = gameObject.GetComponent ("Perso") as Perso;
 		minion = transform.FindChild ("Minion").gameObject;
 		pauseText = GameObject.Find ("GuiPause");
 		PauseQuitterText = GameObject.Find ("GuiQuitter");
 		PauseContinuerText = GameObject.Find ("GuiContinuer");
 		timeScaleDeBase = Time.timeScale;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+	}
+	
+	// Update is called once per frame
+	void Update()
+	{
 		//Déplacement vers l'avant
 		transform.Translate(Vector3.forward * VITESSE * Time.deltaTime);
 		//Déplacement vertical (sauts)
@@ -55,11 +55,11 @@ public class Mouvement : MonoBehaviour {
 				sautEnCour = false;
 			}
 		}
-		 
-
+		
+		
 		//Calcul du score
 		personnage.addScore (Time.deltaTime * VITESSE);
-
+		
 		//Changements de voies
 		if ((_positionCible == VOIED && _positionActuelle == VOIEM) || (_positionCible == VOIEM && _positionActuelle == VOIEG)) 
 		{
@@ -69,7 +69,7 @@ public class Mouvement : MonoBehaviour {
 				_positionActuelle = _positionCible;
 				minion.transform.localPosition = new Vector3(_positionActuelle,minion.transform.localPosition.y, minion.transform.localPosition.z);
 			}
-
+			
 			//_positionActuelle = _positionActuelle==VOIEG?VOIEM:VOIED;
 		}
 		else if ((_positionCible == VOIEG && _positionActuelle == VOIEM) || (_positionCible == VOIEM && _positionActuelle == VOIED)) 
@@ -82,8 +82,8 @@ public class Mouvement : MonoBehaviour {
 			}
 			//_positionActuelle = _positionActuelle == VOIED?VOIEM:VOIEG; 
 		}
-    }
-
+	}
+	
 	public void Droite()
 	{
 		if(_positionCible == VOIEM)
@@ -91,7 +91,7 @@ public class Mouvement : MonoBehaviour {
 		if(_positionCible == VOIEG)
 			_positionCible = VOIEM;
 	}
-
+	
 	public void Gauche()
 	{
 		if(_positionCible == VOIEM)
@@ -99,21 +99,21 @@ public class Mouvement : MonoBehaviour {
 		if(_positionCible == VOIED)
 			_positionCible = VOIEM;
 	}
-
+	
 	public void BrasDroit(float degres)
 	{
 		GameObject brasDroit = GameObject.Find ("DroitEpaule");
 		brasDroit.transform.Rotate (0f, 0f, -brasDroit.transform.rotation.z);
 		brasDroit.transform.Rotate (0f, 0f, degres);
 	}
-
+	
 	public void BrasGauche(float degres)
 	{
 		GameObject brasGauche = GameObject.Find ("GaucheEpaule");
 		brasGauche.transform.Rotate (0f, 0f, -brasGauche.transform.rotation.z);
 		brasGauche.transform.Rotate (0f, 0f, degres);
 	}
-
+	
 	public void saut(bool son = true)
 	{
 		if (!sautEnCour)
@@ -124,7 +124,7 @@ public class Mouvement : MonoBehaviour {
 				sonSaut.Play();
 		}
 	}
-
+	
 	public void pause()
 	{
 		Estpause= !Estpause;
