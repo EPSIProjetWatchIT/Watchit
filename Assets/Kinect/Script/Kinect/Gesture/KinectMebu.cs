@@ -85,6 +85,10 @@ public class KinectMebu : MonoBehaviour {
 					audio.Stop();
 					audio.volume = 1;
 					audio.PlayOneShot(chateau);
+					foreach (GameObject gui in listeGui) {
+						gui.SetActive(false);		
+					}
+					guiChargement.guiText.text = "Chargement...";
 					Application.LoadLevel("Scene_Chateau_2");
 
 				}
