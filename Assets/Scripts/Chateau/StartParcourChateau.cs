@@ -2,7 +2,10 @@
 using System.Collections;
 
 public class StartParcourChateau : MonoBehaviour {
-	
+
+	private const int DUR = 2;
+	private const int MOYEN = 1;
+	private const int FACILE = 0;
 	private const float SOL = 0.035f;
 	private const float PLAFOND = 1f;
 	private const float VOIEG = 0.8f;
@@ -32,10 +35,13 @@ public class StartParcourChateau : MonoBehaviour {
 	GameObject[] morceau = new GameObject[4];
 	int ajoute = 0;
 	public bool avance = false;
+	private int difficulte = 1;
 		
 		// Use this for initialization
 	void Start () {
-		probabiliteObstacle = PROBAINIT;
+		difficulte = Fichiers.getDifficulte ();
+
+		probabiliteObstacle = difficulte == FACILE ? PROBAINIT - 10 : difficulte == MOYEN ? PROBAINIT : PROBAINIT + 10;
 		
 		//Instanciation des variables avant desactivation, pour garder une trace.
 		elements[0] = GameObject.Find("Vase");
@@ -179,7 +185,7 @@ public class StartParcourChateau : MonoBehaviour {
 							nouvelElement.transform.localRotation = Quaternion.Euler(0f, rotationArmure,0f);
 							break;
 						case 2: //Commonde
-							nouvelElement.transform.localPosition = new Vector3(zone,-0.3f,voies[voieChoisie]);
+							nouvelElement.transform.localPosition = new Vector3(zone,-0.54f,voies[voieChoisie]);
 							float rotationCommode = 0f;
 
 							if (voies[voieChoisie] == VOIEG)
@@ -201,7 +207,7 @@ public class StartParcourChateau : MonoBehaviour {
 						}
 					}
 					//On réinitialise la probabilité d'avoir un obstacle
-					probabiliteObstacle  = PROBAINIT;
+					probabiliteObstacle = difficulte == FACILE ? PROBAINIT - 10 : difficulte == MOYEN ? PROBAINIT : PROBAINIT + 10;
 				}
 				else
 				{

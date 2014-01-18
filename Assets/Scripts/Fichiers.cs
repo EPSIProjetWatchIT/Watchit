@@ -47,14 +47,16 @@ public class Fichiers : MonoBehaviour {
 
 	 public static int getDifficulte()
 	{
-		int value = 0;
-		StreamReader file = new StreamReader ("difficulte.txt");
-		value = int.Parse(file.ReadLine());
-		file.Close ();
+		int value = 1;
+		if (File.Exists ("difficulte.txt")) {
+			StreamReader file = new StreamReader ("difficulte.txt");
+			value = int.Parse(file.ReadLine());
+			file.Close ();		
+		}
 		return value;
 	}
 
-	public static void setDifficulte(int value=0)
+	public static void setDifficulte(int value = 1)
 	{
 		StreamWriter file = new StreamWriter ("difficulte.txt");
 		file.WriteLine (value.ToString ());
