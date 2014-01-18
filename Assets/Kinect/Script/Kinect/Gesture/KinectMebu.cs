@@ -80,7 +80,7 @@ public class KinectMebu : MonoBehaviour {
 					audio.Stop();
 					audio.volume = 1;
 					audio.PlayOneShot(chateau);
-					niveauChateau=false;
+					Application.LoadLevel("Scene_Chateau_2");
 
 				}
 
@@ -132,11 +132,11 @@ public class KinectMebu : MonoBehaviour {
 				tallInit=shoulderRight.y;
 
 		}
-
+		//Geste secret !!
 		if (handRight.y > head.y) {
 
 						if (tallInit - shoulderRight.y < (tallInit / 2)) {
-								niveauChateau = true;
+							niveauChateau = true;
 							jouerson2 = true;
 							jouerson1 = true;
 							jouerson3 = true;
