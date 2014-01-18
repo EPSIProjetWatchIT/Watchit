@@ -3,19 +3,19 @@ using System.Collections;
 
 public class StartParcourChateau : MonoBehaviour {
 	
-	private const float SOL = -0.8f;
+	private const float SOL = 0.035f;
 	private const float PLAFOND = 1f;
-	private const float VOIEG = -0.8f;
-	private const float VOIED = 0.8f;
+	private const float VOIEG = 0.8f;
+	private const float VOIED = -0.8f;
 	private const float VOIEM = 0f;
-	private const float DEBUTTUNEL = -3.5f;
-	private const float FINTUNEL = 2.5f;
-	private const int PROBAINIT = 70;
-	private const int PROBADEUXPARLIGNE = 30;
-	private float pas = 3f;
+	private const float DEBUTTUNEL = -3.2f;
+	private const float FINTUNEL = 3.2f;
+	private const int PROBAINIT = 30;
+	private const int PROBADEUXPARLIGNE = 0;
+	private float pas = 1f;
 	private int obstacleParLigne = 1;
 	private System.Random aleatoire = new System.Random ();
-	private GameObject[] elements = new GameObject[5];
+	private GameObject[] elements = new GameObject[4];
 	private float[] voies = {VOIEG,VOIEM,VOIED};
 	public GameObject parcour1;
 	public GameObject parcour2;
@@ -32,23 +32,19 @@ public class StartParcourChateau : MonoBehaviour {
 	GameObject[] morceau = new GameObject[4];
 	int ajoute = 0;
 	public bool avance = false;
-	private Camera cameraScene;
-	private 
 		
 		// Use this for initialization
 	void Start () {
-		cameraScene = Camera.main;
 		probabiliteObstacle = PROBAINIT;
 		
 		//Instanciation des variables avant desactivation, pour garder une trace.
-		elements[0] = GameObject.Find("Bat");
-		elements[1] = GameObject.Find("PierreSolitaire");
-		elements[2] = GameObject.Find("Stalagmite");
-		elements[3] = GameObject.Find("Stalagtite");
-		elements[4] = GameObject.Find("LigneDePierre");
+		elements[0] = GameObject.Find("Vase");
+		elements[1] = GameObject.Find("Armure");
+		elements[2] = GameObject.Find("Commode");
+		elements[3] = GameObject.Find("Coffre");
 		
 		//On desactive les obstacles de bases pour ne pas les avoir a l'écran
-		for (int i=0; i<=4; i++)
+		for (int i=0; i<=3; i++)
 		{
 			elements[i].SetActive(false);
 		}
@@ -57,9 +53,7 @@ public class StartParcourChateau : MonoBehaviour {
 		parcour1 = GameObject.Find("Parcour1");
 		parcour2 = GameObject.Find("Parcour2");
 		
-		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
-		parcour1.SetActive (true);
-		parcour2.SetActive (false);
+
 		
 		//On recherches les grottes du jeu
 		GROTTES = GameObject.FindGameObjectsWithTag ("tunel");
@@ -71,7 +65,7 @@ public class StartParcourChateau : MonoBehaviour {
 		
 		//On trie les grottes entre les deux parcour
 		foreach (GameObject g in GROTTES) {
-			if(g.transform.parent.transform.parent.transform.parent.gameObject.name == "Parcour1" || g.transform.parent.transform.parent.transform.parent.gameObject.name == "Parcour")
+			if(g.transform.parent.gameObject.name == "Parcour1")
 			{
 				grottesParcours1[compteurParcours1] = g;
 				compteurParcours1++;
@@ -84,9 +78,10 @@ public class StartParcourChateau : MonoBehaviour {
 		}
 		//On génère uniquement les obstacles de la partie 1 avant le jeu
 		genererObstacles (grottesParcours1, compteurParcours1);
-		cameraScene.farClipPlane = 20;
-		GameObject.Find ("Affichage chargement").SetActive (false);
 		avance = true;
+		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
+		parcour1.SetActive (true);
+		parcour2.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -108,8 +103,9 @@ public class StartParcourChateau : MonoBehaviour {
 					ParcoursComplets = true;
 				}
 			}
+			genererObstacles (morceau, ajoute);
 		}
-		genererObstacles (morceau, ajoute);
+
 		
 	}
 	
@@ -139,7 +135,7 @@ public class StartParcourChateau : MonoBehaviour {
 					int voieChoisie = aleatoire.Next(0,3); //Voie ou l'on pose l'obstacle si il n'y en a qu'un, voie libre si il y en a deux
 					int voie1 = 0;
 					int voie2 = 0;
-					int elementDispo = 6; //Nombre d'element dans lesquels choisir l'obstacle.
+					int elementDispo = 5; //Nombre d'element dans lesquels choisir l'obstacle +1
 					
 					if (obstacleParLigne == 2)
 					{
@@ -163,29 +159,42 @@ public class StartParcourChateau : MonoBehaviour {
 						
 						switch(hasard)
 						{
-						case 0 : //Bat
-							nouvelElement.transform.localPosition = new Vector3(-PLAFOND + 0.5f,zone,voies[voieChoisie]);
-							nouvelElement.transform.localRotation = Quaternion.Euler(90f, -90f,0f);
-							elementDispo--; //On supprime la ligne de pierres si on a deja un élément a placer
+						case 0 : //Vase
+							nouvelElement.transform.localPosition = new Vector3(zone,0f,voies[voieChoisie]);
+							nouvelElement.transform.localRotation = Quaternion.Euler(270f, 0f,0f);
 							break;
-						case 1: //PierreSolitaire
-							nouvelElement.transform.localPosition = new Vector3(-SOL,zone,voies[voieChoisie]);
-							nouvelElement.transform.localRotation = Quaternion.Euler(0f, 0f,0f);
-							elementDispo--; //On supprime la ligne de pierres si on a deja un élément a placer
+						case 1: //Armure
+							nouvelElement.transform.localPosition = new Vector3(zone,-0.93f,voies[voieChoisie]);
+							float rotationArmure = 0f;
+
+							if (voies[voieChoisie] == VOIEG)
+								rotationArmure = -90f;
+
+							if (voies[voieChoisie] == VOIED)
+								rotationArmure = 90f;
+								
+							if (voies[voieChoisie] == VOIEM)
+								rotationArmure = 0f;
+								
+							nouvelElement.transform.localRotation = Quaternion.Euler(0f, rotationArmure,0f);
 							break;
-						case 2: //Stalagmite
-							nouvelElement.transform.localPosition = new Vector3(-SOL,zone,voies[voieChoisie]);
-							nouvelElement.transform.localRotation = Quaternion.Euler(0f, -90f,0f);
-							elementDispo--; //On supprime la ligne de pierres si on a deja un élément a placer
+						case 2: //Commonde
+							nouvelElement.transform.localPosition = new Vector3(zone,-0.3f,voies[voieChoisie]);
+							float rotationCommode = 0f;
+
+							if (voies[voieChoisie] == VOIEG)
+								rotationCommode = 1800f;
+								
+							if (voies[voieChoisie] == VOIED)
+								rotationCommode = 0f;
+								
+							if (voies[voieChoisie] == VOIEM)
+								rotationCommode = 90f;
+								
+							nouvelElement.transform.localRotation = Quaternion.Euler(270f, rotationCommode,0f);
 							break;
-						case 3: //Stalagtite
-							nouvelElement.transform.localPosition = new Vector3(-PLAFOND,zone,voies[voieChoisie]);
-							nouvelElement.transform.localRotation = Quaternion.Euler(0f, 90f,0f);
-							break;
-						case 4 : //Ligne de pierre
-							obstacle++; //On force le placement d'un seul element si on a deja placé une ligne de pierres qui prend tous les emplacement
-							nouvelElement.transform.localRotation = Quaternion.Euler(0f, 90f,0f);
-							nouvelElement.transform.localPosition = new Vector3(-SOL,zone,VOIEM);
+						case 3: //Coffre
+							nouvelElement.transform.localPosition = new Vector3(zone, -0.3f,voies[voieChoisie]);
 							break;
 						default :
 							break;
@@ -196,7 +205,7 @@ public class StartParcourChateau : MonoBehaviour {
 				}
 				else
 				{
-					probabiliteObstacle += 10;
+					probabiliteObstacle += 5;
 				}
 			}
 		}

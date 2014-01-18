@@ -27,6 +27,8 @@ public class Collisions : MonoBehaviour {
 		if (other.gameObject.tag == "lifeChanger")
 		{
 			LifeChanges life = other.gameObject.GetComponent("LifeChanges") as LifeChanges;
+			if(life.destruction)
+				other.gameObject.SetActive(false);
 			personage.AltereVie (life.variation);
 			mouv.saut(false);
 			sonCollision.Play();

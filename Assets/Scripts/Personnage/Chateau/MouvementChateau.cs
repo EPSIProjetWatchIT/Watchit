@@ -5,7 +5,7 @@ using System.Collections;
 public class MouvementChateau: MonoBehaviour {
 	
 	private const float VITESSE = 5f;
-	private const float HAUTEURINIT = -0.78f;
+	private const float HAUTEURINIT = 0.07f;
 	private const float VITESSEROTATION = 50f;
 	private const float VITESSECHANGEMENTVOIE = 2f;
 	private const float GRAVITE = 0.5f;

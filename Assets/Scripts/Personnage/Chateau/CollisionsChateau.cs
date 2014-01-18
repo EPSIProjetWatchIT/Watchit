@@ -52,8 +52,7 @@ public class CollisionsChateau : MonoBehaviour {
 				if (!virage.traverse)
 				{
 					transform.Rotate (Vector3.up * -90f);
-					GameObject plafond = other.transform.parent.transform.Find("Couloirs").Find ("plafon2").gameObject;
-					transform.position = new Vector3(plafond.transform.position.x,transform.position.y,other.transform.parent.position.z);
+					transform.position = new Vector3(other.transform.parent.position.x,transform.position.y,other.transform.parent.position.z);
 					if(viragePrecedent != null)
 						viragePrecedent.traverse = false;
 					viragePrecedent = virage;
