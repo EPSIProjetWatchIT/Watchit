@@ -43881,7 +43881,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400996, guid: dd7612de1df3cf845a66740b95b08b1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: .699999988
+      value: .495236039
       objectReference: {fileID: 0}
     - target: {fileID: 400996, guid: dd7612de1df3cf845a66740b95b08b1d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -43922,6 +43922,10 @@ Prefab:
     - target: {fileID: 400996, guid: dd7612de1df3cf845a66740b95b08b1d, type: 3}
       propertyPath: m_LocalScale.z
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100996, guid: dd7612de1df3cf845a66740b95b08b1d, type: 3}
+      propertyPath: m_TagString
+      value: lifeChanger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd7612de1df3cf845a66740b95b08b1d, type: 3}
@@ -91632,7 +91636,7 @@ GameObject:
   - 65: {fileID: 2091344872}
   m_Layer: 0
   m_Name: Coffre
-  m_TagString: Untagged
+  m_TagString: lifeChanger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91644,7 +91648,7 @@ Transform:
   m_PrefabInternal: {fileID: 1038658699}
   m_GameObject: {fileID: 2091344867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .88766098, y: .699999988, z: 0}
+  m_LocalPosition: {x: .88766098, y: .495236039, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 40481665}

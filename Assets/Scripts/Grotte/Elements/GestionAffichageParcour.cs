@@ -18,8 +18,8 @@ public class GestionAffichageParcour : MonoBehaviour {
 		StartParcour script = GameObject.Find ("Parcour").GetComponent<StartParcour>() as StartParcour;
 		if (this.gameObject.name == "DisplayParcour1") 
 		{
-			script.parcour1.SetActive(true);
 			script.parcour2.SetActive(false);
+			script.parcour1.SetActive(true);
 		}
 		else
 		{

@@ -194,7 +194,7 @@ public class StartParcourChateau : MonoBehaviour {
 							nouvelElement.transform.localRotation = Quaternion.Euler(270f, rotationCommode,0f);
 							break;
 						case 3: //Coffre
-							nouvelElement.transform.localPosition = new Vector3(zone, -0.3f,voies[voieChoisie]);
+							nouvelElement.transform.localPosition = new Vector3(zone, -0.5f,voies[voieChoisie]);
 							break;
 						default :
 							break;
