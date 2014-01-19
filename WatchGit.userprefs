@@ -1,19 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\Scene_Cinematiques\Scripts\FinCine2.cs">
-    <Files>
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\PassCine.cs" Line="10" Column="2" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\GameOverGestureChateau.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\GameOverGesture.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\General\Perso.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\Chateau\MouvementChateau.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\Chateau\CollisionsChateau.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\VictoireGesture.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\VictoireGestureChateau.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scenes\Scene_Cinematiques\Scripts\FinCine2.cs" Line="8" Column="22" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\PassCine2.cs" Line="4" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Guillaume\Documents\WatchGit\Assets\Scripts\Chateau\GestionAffichageParcourChateau.cs" line="32" />
