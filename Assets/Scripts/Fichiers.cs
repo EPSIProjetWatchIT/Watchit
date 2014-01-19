@@ -5,6 +5,7 @@ using System.IO;
 public class Fichiers : MonoBehaviour {
 
 	public static int[] SCORES = {0,0,0,0,0};
+	public static int dernierScore = 0;
 
 
 	// Use this for initialization
@@ -17,11 +18,14 @@ public class Fichiers : MonoBehaviour {
 	void Update () {
 	}
 
-	public static void getScore()
+	public static void getScore(int niveau)
 	{
+
+		string niv = niveau.ToString ();
+
 		int i = 0;
 		string sc = "";
-		StreamReader file = new StreamReader ("score.txt");
+		StreamReader file = new StreamReader ("scoreNiveau"+niv+".txt");
 		while ((sc = file.ReadLine()) != null)
 		{
 			SCORES[i] = int.Parse(sc);
@@ -30,14 +34,25 @@ public class Fichiers : MonoBehaviour {
 		file.Close ();
 	}
 
-	public static void setScore(int score)
+	public static void setScore(int score, int niveau)
 	{
-		StreamWriter file = new StreamWriter ("score.txt");
+		getScore (niveau);
+		dernierScore = score;
+		string niv = niveau.ToString ();
+		StreamWriter file = new StreamWriter ("scoreNiveau"+niv+".txt");
 
-		for (int i =4; i>=0; i--) {
-			SCORES[i] =  i== 0 ? score : SCORES[i-1];
+
+		//Tri des Scores
+		for (int j = 0; j <= 4; j++)
+		{
+			if( score > SCORES[j])
+			{
+				for (int i =4; i>=j; i--) {
+					SCORES[i] =  i== 0 ? score : SCORES[i-1];
 				}
-
+				SCORES[j] = score;
+			}
+		}
 		foreach (int i in SCORES)
 		{
 			file.WriteLine(i.ToString());

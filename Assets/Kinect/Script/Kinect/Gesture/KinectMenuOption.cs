@@ -22,6 +22,7 @@ public class KinectMenuOption : MonoBehaviour {
 	private bool jouerson1 = true;
 	private bool jouerson2 = true;
 	private bool jouerson3 = true;
+
 	
 	
 	private GameObject[] menu = new GameObject[3];
@@ -73,11 +74,20 @@ public class KinectMenuOption : MonoBehaviour {
 			if (pass)
 			{
 				if (tableauBoolPos[0])
-					Application.LoadLevel("MenuAvecMinion");
+				{
+					Fichiers.setDifficulte(0);
+				}
+					
 				if (tableauBoolPos[1])
-					Application.LoadLevel("MenuAvecMinion");
+				{
+					Fichiers.setDifficulte(1);
+				}
+
 				if (tableauBoolPos[2])
-					Application.LoadLevel("MenuAvecMinion");
+				{
+					Fichiers.setDifficulte(2);
+				}
+				Application.LoadLevel("MenuAvecMinion");
 			}
 		}
 	}
