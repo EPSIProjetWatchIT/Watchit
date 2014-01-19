@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GestionAffichageParcourChateau : MonoBehaviour {
-	public int nbToursPourTerminer = 4;
+	private int nbToursPourTerminer = 4;
 	private int nbToursFaits = 0;
 	private Perso joueur;
 

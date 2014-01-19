@@ -5,6 +5,7 @@ using System;
 public class CollisionsChateau : MonoBehaviour {
 	
 	public AudioSource sonCollision;
+	public AudioSource sonBonus;
 	private Perso personage;
 	private static SupprimeEffet viragePrecedent = null;
 	private Mouvement mouv;
@@ -28,8 +29,16 @@ public class CollisionsChateau : MonoBehaviour {
 		{
 			LifeChanges life = other.gameObject.GetComponent("LifeChanges") as LifeChanges;
 			personage.AltereVie (life.variation);
-			mouv.saut(false);
-			sonCollision.Play();
+			if(life.variation < 0)
+			{
+				mouv.saut(false);
+				sonCollision.Play();
+			}
+			else
+			{
+				sonBonus.Play();
+			}
+
 		}
 		
 		if (other.gameObject.tag == "Droite") 

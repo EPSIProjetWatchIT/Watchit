@@ -13480,6 +13480,7 @@ GameObject:
   - 82: {fileID: 321890735}
   - 82: {fileID: 321890734}
   - 114: {fileID: 321890733}
+  - 82: {fileID: 321890743}
   m_Layer: 0
   m_Name: Personnage
   m_TagString: Untagged
@@ -13659,6 +13660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   niveau: 2
+  Dieu: 0
 --- !u!114 &321890738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13671,6 +13673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonCollision: {fileID: 321890734}
+  sonBonus: {fileID: 321890743}
 --- !u!114 &321890739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13724,6 +13727,64 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &321890743
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 321890731}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6648c66973ed776479bbfe62320ebea3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &322221767
 GameObject:
   m_ObjectHideFlags: 0
@@ -15832,7 +15893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64bbd188967c2bf4a8db5c9b39fcc784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbToursPourTerminer: 4
 --- !u!23 &369947064
 Renderer:
   m_ObjectHideFlags: 0
@@ -64137,7 +64197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64bbd188967c2bf4a8db5c9b39fcc784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbToursPourTerminer: 1
 --- !u!23 &1504707433
 Renderer:
   m_ObjectHideFlags: 0
@@ -91717,7 +91776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 186fad70311718e4e8a16e1b0b7aa77d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variation: -100
+  variation: 15
   destruction: 1
 --- !u!1 &2091658501
 GameObject:

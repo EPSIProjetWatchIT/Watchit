@@ -1,18 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Personnage\Chateau\CollisionsChateau.cs">
     <Files>
-      <File FileName="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" Line="33" Column="50" />
       <File FileName="Assets\Scripts\Personnage\General\Perso.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Fichiers.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Grotte\StartParcour.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\Grotte\Mouvement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Grotte\Elements\GestionAffichageParcour.cs" Line="44" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Chateau\GestionAffichageParcourChateau.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\KinectWrapper\KinectSensor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\General\KinectMouv.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\Grotte\Collisions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Chateau\MouvementChateau.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Chateau\CollisionsChateau.cs" Line="39" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
