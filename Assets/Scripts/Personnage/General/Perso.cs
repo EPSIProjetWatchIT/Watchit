@@ -5,6 +5,7 @@ public class Perso : MonoBehaviour {
 
 	private const int VIEMAX = 100;
 	private GameObject target;
+	public int niveau;
 	
 	public int Vie
 	{
@@ -47,7 +48,7 @@ public class Perso : MonoBehaviour {
 
 	private void EnregistreScore(int score)
 	{
-		Fichiers.setScore (score);
+		Fichiers.setScore (score, niveau);
 	}
 
 	private void Mort(int score)

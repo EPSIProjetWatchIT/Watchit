@@ -5,7 +5,7 @@ public class Scores : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Fichiers.getScore ();
+		Fichiers.getScore (1);
 		for (int i=0; i<=4; i++) {
 			int j = (i+1);
 			GameObject scoresLabel = GameObject.Find("GUI Text S"+j.ToString());
