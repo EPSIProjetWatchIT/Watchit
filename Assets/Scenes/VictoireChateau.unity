@@ -2086,10 +2086,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2055215202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998d731ad96cb8541860e0cd04215cb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 35706bed7d5f088408df20545acc15ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Scene_Chateau
   recommencer: {fileID: 8300000, guid: e6254020218e1de47a079a9205b81434, type: 3}
   quitter: {fileID: 8300000, guid: 8f0aa2397b67c0348a546fa5139ec16d, type: 3}
   sw: {fileID: 106475690}

@@ -41,7 +41,10 @@ public class KinectMebu : MonoBehaviour {
 		listeGui = GameObject.FindGameObjectsWithTag ("GuiMenu");
 		guiChargement = GameObject.Find ("Affichage chargement");
 		guiChargement.guiText.text = "";
-	
+		if (sw.pollSkeleton ()) 
+		{
+			 tallInit = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight].y;
+		}
 	}
 	
 	// Update is called once per frame
@@ -143,20 +146,17 @@ public class KinectMebu : MonoBehaviour {
 			tableauBoolPos [0] = true;
 			jouerson3 = true;
 			jouerson2 = true;
-
-				tallInit=shoulderRight.y;
-
 		}
 		//Geste secret !!
 		if (handRight.y > head.y) {
 
-						if (tallInit - shoulderRight.y < (tallInit / 2)) {
-							niveauChateau = true;
-							jouerson2 = true;
-							jouerson1 = true;
-							jouerson3 = true;
-						}
-				}
+			if (shoulderRight.y < (tallInit / 2)) {
+				niveauChateau = true;
+				jouerson2 = true;
+				jouerson1 = true;
+				jouerson3 = true;
+			}
+		}
 
 		//main d entre Ep et Hanche
 		if ((handRight.y < shoulderRight.y) && (handRight.y > hipMiddle.y)) {

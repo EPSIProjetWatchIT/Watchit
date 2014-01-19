@@ -139,7 +139,7 @@ public class Mouvement : MonoBehaviour {
 		pauseText.guiText.text = Estpause ? "Pause" : "";
 		PauseContinuerText.guiText.text = Estpause ? "Continuer" : ""; 
 		PauseQuitterText.guiText.text = Estpause ? "Quitter" : "";
-
+		Camera.main.farClipPlane = Estpause ? 0.2f : 20f;
 		//NBR, Affichage mvt
 		if (Estpause) {
 			minionPause.SetActive (true);

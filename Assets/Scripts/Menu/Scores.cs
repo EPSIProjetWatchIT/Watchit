@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+
 public class Scores : MonoBehaviour {
+
+	public int niveau;
 
 	// Use this for initialization
 	void Start () {
-		Fichiers.getScore (1);
+		Fichiers.getScore (niveau);
 		for (int i=0; i<=4; i++) {
 			int j = (i+1);
 			GameObject scoresLabel = GameObject.Find("GUI Text S"+j.ToString());

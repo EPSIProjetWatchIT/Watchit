@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GestionAffichageParcourChateau : MonoBehaviour {
-	public int nbToursPourTerminer = 4;
+	private int nbToursPourTerminer = 4;
 	private int nbToursFaits = 0;
 	private Perso joueur;
 
@@ -21,23 +21,23 @@ public class GestionAffichageParcourChateau : MonoBehaviour {
 		StartParcourChateau script = GameObject.Find ("Parcour").GetComponent<StartParcourChateau>() as StartParcourChateau;
 		if (this.gameObject.name == "DisplayParcour1") 
 		{
-			script.parcour2.SetActive(false);
-			script.parcour1.SetActive(true);
-		}
-		else
-		{
+			nbToursFaits++;
 			if(nbToursFaits < nbToursPourTerminer)
 			{
-				script.parcour1.SetActive(false);
-				script.parcour2.SetActive(true);
-				nbToursFaits++;
+				script.parcour2.SetActive(false);
+				script.parcour1.SetActive(true);
 			}
 			else
 			{
 				Fichiers.setScore(joueur.Score, 2);
 				Application.LoadLevel("VictoireChateau");
 			}
+		}
+		else
+		{
 
+				script.parcour1.SetActive(false);
+				script.parcour2.SetActive(true);
 		}
 	}
 }

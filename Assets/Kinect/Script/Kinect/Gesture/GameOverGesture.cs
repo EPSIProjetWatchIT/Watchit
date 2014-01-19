@@ -9,7 +9,7 @@ public class GameOverGesture : MonoBehaviour {
 	private bool jouerson1 = true;
 	private bool jouerson2 = true;
 
-	public string scene;
+	private string scene = "Scene_Grotte";
 
 	public AudioClip recommencer;
 	public AudioClip quitter;
@@ -59,7 +59,7 @@ public class GameOverGesture : MonoBehaviour {
 					//audio.Stop();
 					audio.volume = 1;
 					audio.PlayOneShot(quitter);
-				jouerson2 = false;
+					jouerson2 = false;
 				}
 			
 				

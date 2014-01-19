@@ -3,9 +3,13 @@ using System.Collections;
 
 public class GestionAffichageParcour : MonoBehaviour {
 
+	public int nbToursPourTerminer = 1;
+	private int nbToursFaits = 0;
+	private Perso joueur;
+
 	// Use this for initialization
 	void Start () {
-	
+		joueur = GameObject.Find ("Personnage").GetComponent ("Perso") as Perso;
 	}
 	
 	// Update is called once per frame
@@ -18,8 +22,17 @@ public class GestionAffichageParcour : MonoBehaviour {
 		StartParcour script = GameObject.Find ("Parcour").GetComponent<StartParcour>() as StartParcour;
 		if (this.gameObject.name == "DisplayParcour1") 
 		{
-			script.parcour2.SetActive(false);
-			script.parcour1.SetActive(true);
+			nbToursFaits++;
+			if(nbToursFaits < nbToursPourTerminer)
+			{
+				script.parcour2.SetActive(false);
+				script.parcour1.SetActive(true);
+			}
+			else
+			{
+				Fichiers.setScore(joueur.Score, joueur.niveau);
+				Application.LoadLevel("Victoire");
+			}
 		}
 		else
 		{

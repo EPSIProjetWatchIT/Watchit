@@ -63,7 +63,7 @@ public class StartParcour : MonoBehaviour {
 		//On enregistre les parcours 
 		parcour1 = GameObject.Find("Parcour1");
 		parcour2 = GameObject.Find("Parcour2");
-
+		//On génère uniquement les obstacles de la partie 1 avant le jeu
 		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
 		parcour1.SetActive (true);
 		parcour2.SetActive (false);
@@ -72,8 +72,6 @@ public class StartParcour : MonoBehaviour {
 		GROTTES = GameObject.FindGameObjectsWithTag ("tunel");
 		grottesParcours1 = new GameObject[GROTTES.Length]; //On a un tableau pour le parcours 1 a générer en premier
 		grottesParcours2 = new GameObject[GROTTES.Length];//Et un tableau pour le parcours 2, qui se génerera pendant le parcour 1
-
-		//Si on est en mode tuto
 
 
 		//On trie les grottes entre les deux parcour
@@ -89,7 +87,7 @@ public class StartParcour : MonoBehaviour {
 				compteurParcours2++;
 			}
 				}
-		//On génère uniquement les obstacles de la partie 1 avant le jeu
+
 		genererObstacles (grottesParcours1, compteurParcours1);
 		cameraScene.farClipPlane = 20;
 		GameObject.Find ("Affichage chargement").SetActive (false);

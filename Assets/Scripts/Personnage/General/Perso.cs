@@ -6,6 +6,7 @@ public class Perso : MonoBehaviour {
 	private const int VIEMAX = 100;
 	private GameObject target;
 	public int niveau;
+	public bool Dieu=false;
 	
 	public int Vie
 	{
@@ -41,7 +42,8 @@ public class Perso : MonoBehaviour {
 	void Update () {
 		if (Vie == 0) 
 		{
-			Mort(Score);
+			if (!Dieu)
+				Mort(Score);
 		}
 	
 	}
@@ -54,7 +56,8 @@ public class Perso : MonoBehaviour {
 	private void Mort(int score)
 	{
 		EnregistreScore (score);
-		Application.LoadLevel("GameOver");
+		string scenego = niveau == 1 ? "GameOver" : "GameOverChateau";
+		Application.LoadLevel(scenego);
 	}
 
 	private void Gagne(int score)

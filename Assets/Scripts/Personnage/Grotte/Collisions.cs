@@ -30,7 +30,7 @@ public class Collisions : MonoBehaviour {
 			if(life.destruction)
 				other.gameObject.SetActive(false);
 			personage.AltereVie (life.variation);
-			mouv.saut(false);
+			//mouv.saut(false);
 			sonCollision.Play();
 		}
 
