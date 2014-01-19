@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverGesture : MonoBehaviour {
+public class VictoireGestureChateau: MonoBehaviour {
 	
 	private string[] options = {";  RECOMMENCER",";  QUITTER"};
 	private string[] suppl = {"  '","  $"};
@@ -9,7 +9,7 @@ public class GameOverGesture : MonoBehaviour {
 	private bool jouerson1 = true;
 	private bool jouerson2 = true;
 
-	private string scene = "Scene_Grotte";
+	private string scene = "Scene_Chateau_2";
 
 	public AudioClip recommencer;
 	public AudioClip quitter;

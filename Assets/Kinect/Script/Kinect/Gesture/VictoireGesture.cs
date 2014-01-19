@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameOverGesture : MonoBehaviour {
+public class VictoireGesture : MonoBehaviour {
 	
-	private string[] options = {";  RECOMMENCER",";  QUITTER"};
+	private string[] options = {";  SUIVANT",";  QUITTER"};
 	private string[] suppl = {"  '","  $"};
 	private bool peuxValider = false;
 	private bool jouerson1 = true;
 	private bool jouerson2 = true;
 
-	private string scene = "Scene_Grotte";
+	private string scene = "Transition";
 
 	public AudioClip recommencer;
 	public AudioClip quitter;
@@ -31,7 +31,7 @@ public class GameOverGesture : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		bonePos = new Vector3[2,(int)Kinect.NuiSkeletonPositionIndex.Count];
-		menu [0] = GameObject.Find ("GUI Text Recommencer");
+		menu [0] = GameObject.Find ("GUI Text Suivant");
 		menu [1] = GameObject.Find ("GUI Text Quitter");
 	
 	}
