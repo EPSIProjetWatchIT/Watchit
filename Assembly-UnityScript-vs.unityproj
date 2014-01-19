@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\AudioScript.js" />
      <Compile Include="Assets\Scripts\Menu\CollisionDetection.js" />
+     <Compile Include="Assets\Scripts\Menu\MenuAudio.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_ActionCo.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_Curseur.js" />
      <Compile Include="Assets\Scripts\Menu\Menu_Son.js" />

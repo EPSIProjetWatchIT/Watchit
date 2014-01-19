@@ -1,12 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Personnage\General\KinectMouv.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\MenuAudio.js">
     <Files>
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="44" Column="25" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\GameOverGesture.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMenuOption.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Personnage\General\KinectMouv.cs" Line="85" Column="5" />
+      <File FileName="Assets\Scripts\Menu\MenuAudio.js" Line="5" Column="23" />
+      <File FileName="Assets\Scripts\Menu\MenuAudio.js" Line="8" Column="2" />
+      <File FileName="Assets\Scenes\Scene_Cinematiques\Scripts\AudioScript.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
