@@ -53,6 +53,7 @@
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\KinectMenuOption.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\MainTracked.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\PassCine.cs" />
+     <Compile Include="Assets\Kinect\Script\Kinect\Gesture\PassCine2.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\VictoireGesture.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\Gesture\VictoireGestureChateau.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectImgControllers\DisplayColor.cs" />
@@ -67,6 +68,7 @@
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\KinectSensor.cs" />
      <Compile Include="Assets\Kinect\Script\Kinect\KinectWrapper\SkeletonWrapper.cs" />
      <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\FinCine.cs" />
+     <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\FinCine2.cs" />
      <Compile Include="Assets\Scenes\Scene_Cinematiques\Scripts\PassSceneScript.cs" />
      <Compile Include="Assets\Scripts\Chateau\GestionAffichageParcourChateau.cs" />
      <Compile Include="Assets\Scripts\Chateau\StartParcourChateau.cs" />
