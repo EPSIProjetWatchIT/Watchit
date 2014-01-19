@@ -92,7 +92,7 @@ public class KinectMebu : MonoBehaviour {
 						gui.SetActive(false);		
 					}
 					guiChargement.guiText.text = "Chargement...";
-					Application.LoadLevel("Scene_Chateau_2");
+					Application.LoadLevel("Transition");
 
 				}
 

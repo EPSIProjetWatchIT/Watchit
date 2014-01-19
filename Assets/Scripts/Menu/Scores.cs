@@ -15,6 +15,8 @@ public class Scores : MonoBehaviour {
 			GameObject scoresLabel = GameObject.Find("GUI Text S"+j.ToString());
 			scoresLabel.guiText.text = Fichiers.SCORES[i].ToString();
 				}
+		GameObject scoreActu = GameObject.Find("GUI Text DernierScore");
+		scoreActu.guiText.text = Fichiers.dernierScore.ToString ();
 	
 	}
 	

@@ -26,13 +26,19 @@ public class VictoireGesture : MonoBehaviour {
 	
 	private GameObject[] menu = new GameObject[2];
 	
-	
+	GameObject[] listeGui;
+	GameObject guiChargement;
+
 	
 	// Use this for initialization
 	void Start () {
 		bonePos = new Vector3[2,(int)Kinect.NuiSkeletonPositionIndex.Count];
 		menu [0] = GameObject.Find ("GUI Text Suivant");
 		menu [1] = GameObject.Find ("GUI Text Quitter");
+
+		listeGui = GameObject.FindGameObjectsWithTag ("GuiMenu");
+		guiChargement = GameObject.Find ("Affichage chargement");
+		guiChargement.guiText.text = "";
 	
 	}
 	
@@ -67,8 +73,15 @@ public class VictoireGesture : MonoBehaviour {
 			
 			if (pass && peuxValider)
 			{
-				if (tableauBoolPos[0])
+				if (tableauBoolPos[0]){
+					foreach (GameObject gui in listeGui) {
+						gui.SetActive(false);		
+					}
+					guiChargement.guiText.text = "Chargement...";
 					Application.LoadLevel(scene);
+				}
+
+
 				if (tableauBoolPos[1])
 					Application.LoadLevel("MenuAvecMinion");
 
