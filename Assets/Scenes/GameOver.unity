@@ -279,7 +279,7 @@ GameObject:
   - 132: {fileID: 123554714}
   m_Layer: 0
   m_Name: GUI Text GameOver
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -424,6 +424,56 @@ SkinnedMeshRenderer:
     m_Center: {x: .0359440781, y: -.00832017325, z: -.00273307972}
     m_Extent: {x: .0464377068, y: .0529753864, z: .0283523221}
   m_DirtyAABB: 0
+--- !u!1 &179084981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 179084982}
+  - 132: {fileID: 179084983}
+  m_Layer: 0
+  m_Name: GUI Text DernierScore
+  m_TagString: GuiMenu
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &179084982
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179084981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.0796604, y: -4.5010438, z: 10.2954922}
+  m_LocalScale: {x: 1.03145397, y: 1, z: 1.03145397}
+  m_Children: []
+  m_Father: {fileID: 891335152}
+--- !u!132 &179084983
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 179084981}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: DernierScores
+  m_Anchor: 4
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 9c90ff0279daca145bb9d7dfad83d3b2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 34
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4283819262
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &229748228
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +485,7 @@ GameObject:
   - 132: {fileID: 229748230}
   m_Layer: 0
   m_Name: GUI Text S5
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,6 +524,56 @@ GUIText:
     rgba: 4278190080
   m_PixelCorrect: 1
   m_RichText: 1
+--- !u!1 &232231804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 232231806}
+  - 132: {fileID: 232231805}
+  m_Layer: 0
+  m_Name: Affichage chargement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &232231805
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232231804}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 9c90ff0279daca145bb9d7dfad83d3b2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 56
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278387711
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &232231806
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232231804}
+  m_LocalRotation: {x: .0523889884, y: 0, z: 0, w: .998626769}
+  m_LocalPosition: {x: .479999989, y: .839810014, z: -8.13386536}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &254034574
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +666,7 @@ GameObject:
   - 132: {fileID: 629672273}
   m_Layer: 0
   m_Name: GUI Text Score
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -643,7 +743,7 @@ GameObject:
   - 132: {fileID: 668555647}
   m_Layer: 0
   m_Name: GUI Text S2
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,7 +926,7 @@ GameObject:
   - 132: {fileID: 824630553}
   m_Layer: 0
   m_Name: GUI Text S3
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -957,6 +1057,7 @@ Transform:
   - {fileID: 1124000285}
   - {fileID: 229748229}
   - {fileID: 629672272}
+  - {fileID: 179084982}
   m_Father: {fileID: 0}
 --- !u!1 &1000753668
 GameObject:
@@ -1147,7 +1248,7 @@ GameObject:
   - 132: {fileID: 1124000286}
   m_Layer: 0
   m_Name: GUI Text S4
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,7 +1519,7 @@ GameObject:
   - 114: {fileID: 1697288071}
   m_Layer: 0
   m_Name: GUI Text Quitter
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1749,7 +1850,7 @@ GameObject:
   - 132: {fileID: 1976070344}
   m_Layer: 0
   m_Name: GUI Text S1
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2008,6 +2109,7 @@ GameObject:
   - 82: {fileID: 2055215210}
   - 82: {fileID: 2055215209}
   - 114: {fileID: 2055215211}
+  - 82: {fileID: 2055215212}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2087,7 +2189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 998d731ad96cb8541860e0cd04215cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Scene_grotte
   recommencer: {fileID: 8300000, guid: e6254020218e1de47a079a9205b81434, type: 3}
   quitter: {fileID: 8300000, guid: 8f0aa2397b67c0348a546fa5139ec16d, type: 3}
   sw: {fileID: 106475690}
@@ -2219,6 +2320,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   niveau: 1
+--- !u!82 &2055215212
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2055215202}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 00bb6778f7f23cb4682c5283cd3a76da, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2109452843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,7 +2392,7 @@ GameObject:
   - 114: {fileID: 2109452844}
   m_Layer: 0
   m_Name: GUI Text Recommencer
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
