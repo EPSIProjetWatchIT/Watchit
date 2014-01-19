@@ -41,8 +41,10 @@ public class Mouvement : MonoBehaviour {
 		PauseContinuerText = GameObject.Find ("GuiContinuer");
 		timeScaleDeBase = Time.timeScale;
 		//NBR, ajout gameObject MinionPause
-		minionPause = transform.FindChild ("Minion_Indy_Menu_pause").gameObject;
-		minionQuitter = transform.FindChild ("MinionQuitter").gameObject;
+		minionPause = GameObject.Find ("MinionContinuer");
+		minionQuitter = GameObject.Find ("MinionQuitter");
+		minionPause.SetActive (false);
+		minionQuitter.SetActive (false);
     }
 
     // Update is called once per frame

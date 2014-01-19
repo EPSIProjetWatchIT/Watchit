@@ -88,7 +88,7 @@ GameObject:
   - 114: {fileID: 89228369}
   m_Layer: 0
   m_Name: GUI Text Quitter
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   - 132: {fileID: 152960448}
   m_Layer: 0
   m_Name: GUI Text S5
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,7 +633,7 @@ GameObject:
   - 132: {fileID: 355456973}
   m_Layer: 0
   m_Name: GUI Text S2
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -683,7 +683,7 @@ GameObject:
   - 132: {fileID: 357281521}
   m_Layer: 0
   m_Name: GUI Text DernierScore
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1201,7 +1201,7 @@ GameObject:
   - 132: {fileID: 919087728}
   m_Layer: 0
   m_Name: GUI Text Score
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1251,7 +1251,7 @@ GameObject:
   - 132: {fileID: 940837515}
   m_Layer: 0
   m_Name: GUI Text Victoire
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1371,7 +1371,7 @@ GameObject:
   - 132: {fileID: 1138545363}
   m_Layer: 0
   m_Name: GUI Text S1
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1448,7 +1448,7 @@ GameObject:
   - 132: {fileID: 1320392509}
   m_Layer: 0
   m_Name: GUI Text S4
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1793,8 +1793,8 @@ GameObject:
   - 82: {fileID: 1480541083}
   - 114: {fileID: 1480541082}
   m_Layer: 0
-  m_Name: GUI Text Recommencer
-  m_TagString: Untagged
+  m_Name: GUI Text Suivant
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2026,7 +2026,7 @@ GameObject:
   - 132: {fileID: 1627252339}
   m_Layer: 0
   m_Name: GUI Text S3
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

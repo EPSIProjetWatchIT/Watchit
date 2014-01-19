@@ -279,7 +279,7 @@ GameObject:
   - 132: {fileID: 123554714}
   m_Layer: 0
   m_Name: GUI Text Victoire
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +485,7 @@ GameObject:
   - 132: {fileID: 229748230}
   m_Layer: 0
   m_Name: GUI Text S5
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,7 +616,7 @@ GameObject:
   - 132: {fileID: 629672273}
   m_Layer: 0
   m_Name: GUI Text Score
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -693,7 +693,7 @@ GameObject:
   - 132: {fileID: 668555647}
   m_Layer: 0
   m_Name: GUI Text S2
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -876,7 +876,7 @@ GameObject:
   - 132: {fileID: 824630553}
   m_Layer: 0
   m_Name: GUI Text S3
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,7 +1198,7 @@ GameObject:
   - 132: {fileID: 1124000286}
   m_Layer: 0
   m_Name: GUI Text S4
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1469,7 +1469,7 @@ GameObject:
   - 114: {fileID: 1697288071}
   m_Layer: 0
   m_Name: GUI Text Quitter
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1800,7 +1800,7 @@ GameObject:
   - 132: {fileID: 1920761209}
   m_Layer: 0
   m_Name: GUI Text DernierScore
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1850,7 +1850,7 @@ GameObject:
   - 132: {fileID: 1976070344}
   m_Layer: 0
   m_Name: GUI Text S1
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2404,7 +2404,7 @@ GameObject:
   - 114: {fileID: 2109452844}
   m_Layer: 0
   m_Name: GUI Text Recommencer
-  m_TagString: Untagged
+  m_TagString: GuiMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
