@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Personnage\General\KinectMouv.cs">
     <Files>
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="143" Column="8" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="162" Column="1" />
+      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="44" Column="25" />
       <File FileName="Assets\Kinect\Script\Kinect\Gesture\GameOverGesture.cs" Line="1" Column="1" />
       <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMenuOption.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\General\KinectMouv.cs" Line="85" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
