@@ -79,7 +79,7 @@ public class VictoireGestureChateau: MonoBehaviour {
 					}
 					guiChargement.guiText.text = "Chargement...";
 					Application.LoadLevel(scene);
-
+				}
 
 				if (tableauBoolPos[1])
 					Application.LoadLevel("MenuAvecMinion");
