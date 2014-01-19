@@ -26,6 +26,9 @@ public class Mouvement : MonoBehaviour {
 	private GameObject PauseContinuerText;
 	private GameObject PauseQuitterText;
 	private float timeScaleDeBase;
+	//NBR, Ajout MinionPause et MinionQuitter
+	private GameObject minionPause;
+	private GameObject minionQuitter;
 	
     // Use this for initialization
     void Start()
@@ -37,6 +40,9 @@ public class Mouvement : MonoBehaviour {
 		PauseQuitterText = GameObject.Find ("GuiQuitter");
 		PauseContinuerText = GameObject.Find ("GuiContinuer");
 		timeScaleDeBase = Time.timeScale;
+		//NBR, ajout gameObject MinionPause
+		minionPause = transform.FindChild ("Minion_Indy_Menu_pause").gameObject;
+		minionQuitter = transform.FindChild ("MinionQuitter").gameObject;
     }
 
     // Update is called once per frame
@@ -133,6 +139,16 @@ public class Mouvement : MonoBehaviour {
 		pauseText.guiText.text = Estpause ? "Pause" : "";
 		PauseContinuerText.guiText.text = Estpause ? "Continuer" : ""; 
 		PauseQuitterText.guiText.text = Estpause ? "Quitter" : "";
+
+		//NBR, Affichage mvt
+		if (Estpause) {
+			minionPause.SetActive (true);
+			minionQuitter.SetActive(true);
+		} 
+		else {
+			minionPause.SetActive (false);
+			minionQuitter.SetActive(false);
+		}
 	}
 	
 }

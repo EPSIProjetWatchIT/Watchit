@@ -1,11 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu\VictoireAudio.js">
     <Files>
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="143" Column="8" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMebu.cs" Line="162" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\GameOverGesture.cs" Line="1" Column="1" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\KinectMenuOption.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu\VictoireAudio.js" Line="5" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
