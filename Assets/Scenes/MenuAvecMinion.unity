@@ -1902,7 +1902,6 @@ MonoBehaviour:
   option: {fileID: 8300000, guid: ee768b292f35abc409f7a5b75d3830af, type: 3}
   quitter: {fileID: 8300000, guid: a9a18e8c5da9c71468368e0147bffd87, type: 3}
   chateau: {fileID: 8300000, guid: e6254020218e1de47a079a9205b81434, type: 3}
-  tallInit: 0
   sw: {fileID: 62104775}
 --- !u!82 &2055215209
 AudioSource:

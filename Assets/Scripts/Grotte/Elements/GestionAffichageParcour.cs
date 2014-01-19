@@ -30,7 +30,7 @@ public class GestionAffichageParcour : MonoBehaviour {
 			}
 			else
 			{
-				Fichiers.setScore(joueur.Score, 1);
+				Fichiers.setScore(joueur.Score, joueur.niveau);
 				Application.LoadLevel("Victoire");
 			}
 		}

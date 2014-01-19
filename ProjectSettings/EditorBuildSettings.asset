@@ -20,6 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
   - enabled: 1
+    path: Assets/Scenes/GameOverChateau.unity
+  - enabled: 1
     path: Assets/Scenes/Scene_Chateau_2.unity
   - enabled: 1
     path: Assets/Scenes/VictoireChateau.unity

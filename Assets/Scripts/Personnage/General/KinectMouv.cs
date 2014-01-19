@@ -74,7 +74,7 @@ public class KinectMouv : MonoBehaviour {
 			saut = GoJump;
 			
 			//Pause
-			if ((handRight.y < hipCenter.y) && (handRight.x > hipCenter.x + 0.3)) 
+			if ((handRight.y < hipCenter.y) && (handRight.x > hipCenter.x + 0.5)) 
 			{
 				isBreak = true;
 				

@@ -63,6 +63,10 @@ public class StartParcour : MonoBehaviour {
 		//On enregistre les parcours 
 		parcour1 = GameObject.Find("Parcour1");
 		parcour2 = GameObject.Find("Parcour2");
+		//On génère uniquement les obstacles de la partie 1 avant le jeu
+		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
+		parcour1.SetActive (true);
+		parcour2.SetActive (false);
 
 		//On recherches les grottes du jeu
 		GROTTES = GameObject.FindGameObjectsWithTag ("tunel");
@@ -83,10 +87,7 @@ public class StartParcour : MonoBehaviour {
 				compteurParcours2++;
 			}
 				}
-		//On génère uniquement les obstacles de la partie 1 avant le jeu
-		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
-		parcour1.SetActive (true);
-		parcour2.SetActive (false);
+
 		genererObstacles (grottesParcours1, compteurParcours1);
 		cameraScene.farClipPlane = 20;
 		GameObject.Find ("Affichage chargement").SetActive (false);
