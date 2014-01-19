@@ -64137,7 +64137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64bbd188967c2bf4a8db5c9b39fcc784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbToursPourTerminer: 4
+  nbToursPourTerminer: 1
 --- !u!23 &1504707433
 Renderer:
   m_ObjectHideFlags: 0

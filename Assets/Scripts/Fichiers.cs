@@ -51,6 +51,7 @@ public class Fichiers : MonoBehaviour {
 					SCORES[i] =  i== 0 ? score : SCORES[i-1];
 				}
 				SCORES[j] = score;
+				j=5;
 			}
 		}
 		foreach (int i in SCORES)
