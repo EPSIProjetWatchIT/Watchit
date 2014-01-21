@@ -21,19 +21,19 @@ public class StartParcour : MonoBehaviour {
 	private GameObject[] elements = new GameObject[5];
 	private float[] voies = {VOIEG,VOIEM,VOIED};
 	public GameObject parcour1;
-	public GameObject parcour2;
+	//public GameObject parcour2;
 	private int probabiliteObstacle;
 	private GameObject elementCopie;
 	private GameObject nouvelElement;
 	private GameObject[] GROTTES;
 	private GameObject[] grottesParcours1;
-	private GameObject[] grottesParcours2;
+	//private GameObject[] grottesParcours2;
 	private int compteurParcours1 = 0;
-	private int compteurParcours2 = 0;
-	private int tampon=0;
-	private bool ParcoursComplets = false;
-	GameObject[] morceau = new GameObject[4];
-	int ajoute = 0;
+	//private int compteurParcours2 = 0;
+//	private int tampon=0;
+//	private bool ParcoursComplets = false;
+//	GameObject[] morceau = new GameObject[4];
+	//int ajoute = 0;
 	public bool avance = false;
 	private Camera cameraScene;
 	private int difficulte = 1;
@@ -62,16 +62,16 @@ public class StartParcour : MonoBehaviour {
 
 		//On enregistre les parcours 
 		parcour1 = GameObject.Find("Parcour1");
-		parcour2 = GameObject.Find("Parcour2");
+		//parcour2 = GameObject.Find("Parcour2");
 		//On génère uniquement les obstacles de la partie 1 avant le jeu
 		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
 		parcour1.SetActive (true);
-		parcour2.SetActive (false);
+		//parcour2.SetActive (false);
 
 		//On recherches les grottes du jeu
 		GROTTES = GameObject.FindGameObjectsWithTag ("tunel");
 		grottesParcours1 = new GameObject[GROTTES.Length]; //On a un tableau pour le parcours 1 a générer en premier
-		grottesParcours2 = new GameObject[GROTTES.Length];//Et un tableau pour le parcours 2, qui se génerera pendant le parcour 1
+		//grottesParcours2 = new GameObject[GROTTES.Length];//Et un tableau pour le parcours 2, qui se génerera pendant le parcour 1
 
 
 		//On trie les grottes entre les deux parcour
@@ -81,12 +81,12 @@ public class StartParcour : MonoBehaviour {
 				grottesParcours1[compteurParcours1] = g;
 				compteurParcours1++;
 			}
-			else
+			/*else
 			{
 				grottesParcours2[compteurParcours2] = g;
 				compteurParcours2++;
-			}
-				}
+			}*/
+		}
 
 		genererObstacles (grottesParcours1, compteurParcours1);
 		cameraScene.farClipPlane = 20;
@@ -98,6 +98,7 @@ public class StartParcour : MonoBehaviour {
 	void Update () {
 
 		//Ici on génère le parcours 2 pendant qu'on cours
+		/*
 		if (!ParcoursComplets && avance) 
 		{
 			ajoute = 0;
@@ -115,7 +116,7 @@ public class StartParcour : MonoBehaviour {
 			}
 		}
 		genererObstacles (morceau, ajoute);
-	
+	*/
 	}
 
 

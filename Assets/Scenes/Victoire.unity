@@ -125,7 +125,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -826,6 +826,7 @@ Transform:
   m_LocalPosition: {x: -11.4958363, y: 5.21001911, z: -10.2954922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 557567391}
   - {fileID: 357281520}
   - {fileID: 940837514}
   - {fileID: 89228368}
@@ -1001,7 +1002,7 @@ Light:
   m_Color: {r: .970588207, g: .620890975, b: .620890975, a: 1}
   m_Intensity: 8
   m_Range: 10
-  m_SpotAngle: 115.509964
+  m_SpotAngle: 142
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1024,6 +1025,57 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &557567389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 557567391}
+  - 132: {fileID: 557567390}
+  m_Layer: 0
+  m_Name: GUI Indication
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &557567390
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557567389}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: "Pour acc\xE9der au niveau 2 depuis le menu, levez la main droite et baissez
+    vous..."
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &557567391
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557567389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.5567322, y: -5.08639431, z: 10.2954922}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 390793787}
 --- !u!1 &661175464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,7 +1873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7725c9bd334914ea4778a4d87ca413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSuivant: Scene_Grotte
+  levelSuivant: Scene_Chateau_2
 --- !u!82 &1480541083
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1831,7 +1883,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1904,7 +1956,7 @@ GUIText:
   m_GameObject: {fileID: 1480541080}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Recommencer
+  m_Text: Suivant
   m_Anchor: 0
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}

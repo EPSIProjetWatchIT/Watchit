@@ -19,9 +19,9 @@ public class KinectMenuOption : MonoBehaviour {
 	
 	private bool pass;
 	
-	private bool jouerson1 = true;
-	private bool jouerson2 = true;
-	private bool jouerson3 = true;
+	private bool jouerson1 = false;
+	private bool jouerson2 = false;
+	private bool jouerson3 = false;
 
 	
 	

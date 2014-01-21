@@ -5,6 +5,7 @@ public class PassCine2 : MonoBehaviour {
 	public SkeletonWrapper sw;
 	[HideInInspector]
 	public Vector3[,] bonePos;
+	private bool peuxValider = false;
 
 
 
@@ -19,19 +20,17 @@ public class PassCine2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (sw.pollSkeleton ()) {
-		
-			Vector3 shoulderLeftGo = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderLeft];
-			
-	
-			print ("y Gauche : " + shoulderLeftGo.y.ToString ());
-	
-					
-					
-			if (MenuDetection ()) {
+			if (MenuDetection() && peuxValider) {
 				Application.LoadLevel("Scene_Chateau_2");
 			}
-
+		Vector3 MainGauche = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HandLeft];
+		Vector3 Hanche = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HipCenter];
+			if( MainGauche.y < Hanche.y)
+				peuxValider = true;
 		}
+
+		if (Input.GetKey (KeyCode.Escape))
+			Application.LoadLevel ("Scene_Chateau_2");
 	}
 	
 	
@@ -39,19 +38,10 @@ public class PassCine2 : MonoBehaviour {
 	{
 		bool pass=false;
 		Vector3 handLeft = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HandLeft];
-
-		Vector3 shoulderLeft = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight];
-		
-
-		
-		print("handLeft Y: "+handLeft.y.ToString());
-		print ("handleft X : " + handLeft.x.ToString ());
-		
+		Vector3 shoulderLeft = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderLeft];
 		// Left and right hands below hip  &&    left hand 0.3 to left of center hip
 		if ((handLeft.y > shoulderLeft.y)) 
 			pass=true;
-
-			return pass;
-
+		return pass;
 	}
 }

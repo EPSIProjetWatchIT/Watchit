@@ -87,7 +87,7 @@ public class StartParcourChateau : MonoBehaviour {
 		avance = true;
 		//On désactive le parcours 2 pour ne pas avoir trop de calcul a faire.
 		parcour1.SetActive (true);
-		parcour2.SetActive (false);
+		//parcour2.SetActive (false);
 	}
 	
 	// Update is called once per frame

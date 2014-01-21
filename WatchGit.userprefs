@@ -1,15 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Kinect\Script\Kinect\Gesture\VictoireGesture.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Personnage\Grotte\Clavier.cs">
     <Files>
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\GameOverGesture.cs" Line="41" Column="53" />
-      <File FileName="Assets\Kinect\Script\Kinect\Gesture\VictoireGesture.cs" Line="52" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\Grotte\Clavier.cs" Line="57" Column="11" />
+      <File FileName="Assets\Scripts\Personnage\Grotte\Clavier.cs" Line="70" Column="1" />
+      <File FileName="Assets\Scripts\Personnage\General\Perso.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\Guillaume\Documents\WatchGit\Assets\Scripts\Chateau\GestionAffichageParcourChateau.cs" line="32" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

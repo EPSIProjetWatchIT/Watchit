@@ -11,7 +11,6 @@ public class HealthBar : MonoBehaviour {
 	private float scoreBarlenght;
 	private Perso personnage;
 
-	GUIStyle textStyleHB = new GUIStyle();
 
 	void Start(){
 		healthBarlenght = Screen.width / 2;
@@ -37,6 +36,7 @@ public class HealthBar : MonoBehaviour {
 						currentStyle.normal.background = MakeTex (2, 2, new Color (255,0,0, 255f));
 				}
 
+		GUI.contentColor = Color.black;
 		GUI.Box(new Rect(10, 10, healthBarlenght, 20), curHealth + "/" + maxHealth, currentStyle);
 		GUI.Label (new Rect (Screen.width - tailleScore, 10, tailleScore, 30), "Score : " + personnage.Score.ToString());
 	}

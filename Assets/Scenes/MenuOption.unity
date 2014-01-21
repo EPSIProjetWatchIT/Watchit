@@ -1239,6 +1239,7 @@ GameObject:
   - 132: {fileID: 1734708725}
   - 114: {fileID: 1734708729}
   - 82: {fileID: 1734708728}
+  - 114: {fileID: 1734708727}
   m_Layer: 0
   m_Name: GUI Text Hard
   m_TagString: Untagged
@@ -1280,6 +1281,18 @@ Transform:
   m_LocalScale: {x: .915315568, y: 1, z: 1.03145409}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1734708727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734708724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9e6507f8e79f143a0acbecdee0e88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  niveau: 2
 --- !u!82 &1734708728
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1289,7 +1302,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1764,6 +1777,7 @@ GameObject:
   - 132: {fileID: 2033362004}
   - 114: {fileID: 2033362003}
   - 82: {fileID: 2033362002}
+  - 114: {fileID: 2033362001}
   m_Layer: 0
   m_Name: GUI Text Medium
   m_TagString: Untagged
@@ -1771,6 +1785,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2033362001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033362000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9e6507f8e79f143a0acbecdee0e88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  niveau: 1
 --- !u!82 &2033362002
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1780,7 +1806,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1989,7 +2015,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 5f02dd169444d4b4bb641801f416eebc, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2047,7 +2073,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: d3cf46a2157a3cf47bb8b2dec38c5437, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2105,7 +2131,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: e6254020218e1de47a079a9205b81434, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2223,6 +2249,7 @@ GameObject:
   - 132: {fileID: 2109452847}
   - 114: {fileID: 2109452846}
   - 82: {fileID: 2109452845}
+  - 114: {fileID: 2109452844}
   m_Layer: 0
   m_Name: GUI Text Easy
   m_TagString: Untagged
@@ -2230,6 +2257,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2109452844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2109452843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec9e6507f8e79f143a0acbecdee0e88f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  niveau: 0
 --- !u!82 &2109452845
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2239,7 +2278,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

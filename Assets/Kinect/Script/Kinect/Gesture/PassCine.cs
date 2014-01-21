@@ -19,19 +19,12 @@ public class PassCine : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (sw.pollSkeleton ()) {
-		
-			Vector3 shoulderLeftGo = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderLeft];
-			
-	
-			print ("y Gauche : " + shoulderLeftGo.y.ToString ());
-	
-					
-					
 			if (MenuDetection ()) {
 				Application.LoadLevel("MenuAvecMinion");
 			}
-
 		}
+		if(Input.GetKey(KeyCode.Escape))
+			Application.LoadLevel("MenuAvecMinion");
 	}
 	
 	
@@ -39,14 +32,7 @@ public class PassCine : MonoBehaviour {
 	{
 		bool pass=false;
 		Vector3 handLeft = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.HandLeft];
-
 		Vector3 shoulderLeft = sw.bonePos [0, (int)Kinect.NuiSkeletonPositionIndex.ShoulderRight];
-		
-
-		
-		print("handLeft Y: "+handLeft.y.ToString());
-		print ("handleft X : " + handLeft.x.ToString ());
-		
 		// Left and right hands below hip  &&    left hand 0.3 to left of center hip
 		if ((handLeft.y > shoulderLeft.y)) 
 			pass=true;

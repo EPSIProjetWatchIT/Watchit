@@ -6,8 +6,8 @@ public class VictoireGesture : MonoBehaviour {
 	private string[] options = {";  SUIVANT",";  QUITTER"};
 	private string[] suppl = {"  '","  $"};
 	private bool peuxValider = false;
-	private bool jouerson1 = true;
-	private bool jouerson2 = true;
+	private bool jouerson1 = false;
+	private bool jouerson2 = false;
 
 	private string scene = "Transition";
 

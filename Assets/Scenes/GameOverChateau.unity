@@ -773,7 +773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc7725c9bd334914ea4778a4d87ca413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSuivant: Scene_Grotte
+  levelSuivant: Scene_Chateau_2
 --- !u!82 &582734135
 AudioSource:
   m_ObjectHideFlags: 0
@@ -783,7 +783,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1927,7 +1927,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

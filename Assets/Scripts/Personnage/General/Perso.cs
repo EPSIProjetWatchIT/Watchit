@@ -6,7 +6,7 @@ public class Perso : MonoBehaviour {
 	private const int VIEMAX = 100;
 	private GameObject target;
 	public int niveau;
-	public bool Dieu=false;
+	public static bool Dieu=false;
 	
 	public int Vie
 	{

@@ -9,7 +9,7 @@ public class Clavier : MonoBehaviour {
 	private bool gauche = false;
 	private bool saut = false;
 	private bool appuieP = false;
-
+	private bool appuieG = false;
 
 
 	// Use this for initialization
@@ -43,12 +43,18 @@ public class Clavier : MonoBehaviour {
 			mouv.pause();
 			appuieP = true;
 		}
+		if(Input.GetKey(KeyCode.G) && !appuieG)
+		{
+			Perso.Dieu = !Perso.Dieu;
+			appuieG = true;
+		}
 
 
 		gauche = Input.GetKey (KeyCode.LeftArrow);
 		droite = Input.GetKey (KeyCode.RightArrow);
 		saut = Input.GetKey (KeyCode.Space);
 		appuieP = Input.GetKey (KeyCode.P);
+		appuieG = Input.GetKey (KeyCode.G);
 
 
 		if (Input.GetKey (KeyCode.UpArrow))

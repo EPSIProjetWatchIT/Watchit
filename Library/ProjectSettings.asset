@@ -10,8 +10,8 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: Unity Technologies
-  productName: Stealth
+  companyName: EPSI Lyon
+  productName: Watch It
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -26,7 +26,7 @@ PlayerSettings:
   m_UseDX11: 1
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
-  displayResolutionDialog: 1
+  displayResolutionDialog: 2
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
   allowedAutorotateToLandscapeRight: 1
@@ -43,8 +43,8 @@ PlayerSettings:
   enableHWStatistics: 1
   usePlayerLog: 1
   stripPhysics: 0
-  forceSingleInstance: 0
-  resizableWindow: 1
+  forceSingleInstance: 1
+  resizableWindow: 0
   useMacAppStoreValidation: 0
   gpuSkinning: 1
   xboxPIXTextureCapture: 0
@@ -106,11 +106,12 @@ PlayerSettings:
   AndroidSplashScreenScale: 0
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
-  resolutionDialogBanner: {fileID: 0}
+  resolutionDialogBanner: {fileID: 2800000, guid: 94be5d37f5b13644ba98be9cb7da48bb,
+    type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 81a6c40a0cb635d428bd7fe582c0e694, type: 3}
       m_Size: 128
   - m_BuildTarget: Standalone
     m_Icons:
@@ -174,6 +175,7 @@ PlayerSettings:
   spritePackerPolicy: 
   scriptingDefineSymbols:
     0: "X\x01"
+    2: 
   metroPackageName: 
   metroPackageLogo: 
   metroPackageVersion: 

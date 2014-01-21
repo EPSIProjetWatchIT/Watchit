@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity2/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity2/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -78,8 +78,11 @@
      <Compile Include="Assets\Scripts\Grotte\Elements\SupprimeEffet.cs" />
      <Compile Include="Assets\Scripts\Grotte\StartParcour.cs" />
      <Compile Include="Assets\Scripts\Menu\Chargement.cs" />
+     <Compile Include="Assets\Scripts\Menu\ChoixDiffSouris.cs" />
      <Compile Include="Assets\Scripts\Menu\CollisionGameOver.cs" />
+     <Compile Include="Assets\Scripts\Menu\FinSplash.cs" />
      <Compile Include="Assets\Scripts\Menu\Menu_ChangeSceneCollision.cs" />
+     <Compile Include="Assets\Scripts\Menu\Niveau2FromMebu.cs" />
      <Compile Include="Assets\Scripts\Menu\Pause.cs" />
      <Compile Include="Assets\Scripts\Menu\Scores.cs" />
      <Compile Include="Assets\Scripts\Personnage\Chateau\ClavierChateau.cs" />

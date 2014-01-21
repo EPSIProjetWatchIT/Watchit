@@ -19,25 +19,16 @@ public class GestionAffichageParcour : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		StartParcour script = GameObject.Find ("Parcour").GetComponent<StartParcour>() as StartParcour;
-		if (this.gameObject.name == "DisplayParcour1") 
+		//StartParcour script = GameObject.Find ("Parcour").GetComponent<StartParcour>() as StartParcour;
+		//if (this.gameObject.name == "DisplayParcour1") 
+		if (this.gameObject.name == "DisplayParcour2") 
 		{
 			nbToursFaits++;
-			if(nbToursFaits < nbToursPourTerminer)
-			{
-				script.parcour2.SetActive(false);
-				script.parcour1.SetActive(true);
-			}
-			else
+			if(nbToursFaits == nbToursPourTerminer)
 			{
 				Fichiers.setScore(joueur.Score, joueur.niveau);
 				Application.LoadLevel("Victoire");
 			}
-		}
-		else
-		{
-			script.parcour1.SetActive(false);
-			script.parcour2.SetActive(true);
 		}
 	}
 }

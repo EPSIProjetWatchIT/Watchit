@@ -18,26 +18,15 @@ public class GestionAffichageParcourChateau : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		StartParcourChateau script = GameObject.Find ("Parcour").GetComponent<StartParcourChateau>() as StartParcourChateau;
+		//StartParcourChateau script = GameObject.Find ("Parcour").GetComponent<StartParcourChateau>() as StartParcourChateau;
 		if (this.gameObject.name == "DisplayParcour1") 
 		{
 			nbToursFaits++;
-			if(nbToursFaits < nbToursPourTerminer)
-			{
-				script.parcour2.SetActive(false);
-				script.parcour1.SetActive(true);
-			}
-			else
+			if(nbToursFaits == nbToursPourTerminer)
 			{
 				Fichiers.setScore(joueur.Score, 2);
 				Application.LoadLevel("VictoireChateau");
 			}
-		}
-		else
-		{
-
-				script.parcour1.SetActive(false);
-				script.parcour2.SetActive(true);
 		}
 	}
 }
